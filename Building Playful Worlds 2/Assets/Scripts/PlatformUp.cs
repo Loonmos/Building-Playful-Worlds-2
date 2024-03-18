@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatformUp : MonoBehaviour
 {
     public List<Transform> levelTransformsList = new List<Transform>(); // use this instead of separate transforms
+    [SerializeField] private int levelIndex;
 
     public Transform levelOne;
     public Transform levelTwo;
@@ -32,6 +33,8 @@ public class PlatformUp : MonoBehaviour
         onLevel2 = false;
         onLevel3 = false;
         onLevel4 = false;
+
+        levelIndex = 0;
     }
 
     
@@ -104,6 +107,14 @@ public class PlatformUp : MonoBehaviour
         starOff.SetActive(true);
         starOn.SetActive(false);
     }
+
+    public void MovePlatform()
+    {
+        levelIndex += 1;
+
+        transform.position = Vector3.MoveTowards(transform.position, levelTransformsList[levelIndex].position, speed * Time.deltaTime);
+    }
+
 
     void GoLevel1()
     {

@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PickUpInPlace : MonoBehaviour
 {
+    public UnityEvent pickUp;
+
     public GameObject lightPathOff;
     public GameObject lightPathOn;
     
@@ -40,7 +43,6 @@ public class PickUpInPlace : MonoBehaviour
     {
         if (other.tag == "BigPickUp" || other.tag == "Player")
         {
-            Debug.Log("should collide");
             lightPathOn.SetActive(true);
             lightCrystalOn.SetActive(true);
 
@@ -49,6 +51,8 @@ public class PickUpInPlace : MonoBehaviour
 
             platformOff.SetActive(true);
             platformOn.SetActive(false);
+
+            pickUp.Invoke();
         }
 
         if (other.tag == "SmallPickUp")
@@ -73,6 +77,8 @@ public class PickUpInPlace : MonoBehaviour
 
             platformOff.SetActive(false);
             platformOn.SetActive(true);
+
+            pickUp.Invoke();
         }
 
         if (other.tag == "SmallPickUp")

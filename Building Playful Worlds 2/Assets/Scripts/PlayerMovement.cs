@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
+    public GravityText gravText;
 
     [SerializeField] private float speed = 12f;
     Vector3 velocity;
@@ -18,9 +20,6 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     bool isGrounded;
 
-    public GameObject lowG;
-    public GameObject highG;
-
     public Transform starCrystal;
     public Transform starRegular;
     public Transform starCastSelf;
@@ -28,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         gravity = -20f;
-        lowG.SetActive(false);
-        highG.SetActive(false);
     }
 
     void Update()
@@ -97,27 +94,27 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("LowG"))
         {
-            ChangeGravity(-10f, 12f, 5f, true, false);
+            ChangeGravity(-10f, 12f, 5f);
+            gravText.ChangeText("Low");
         }
         
         if (Input.GetButtonDown("NormalG"))
         {
-            ChangeGravity(-20f, 6f, 3f, false, false);
+            ChangeGravity(-20f, 6f, 3f);
+            gravText.ChangeText("Normal");
         }
         
         if (Input.GetButtonDown("HighG"))
         {
-            ChangeGravity(-30f, 3f, 1f, false, true);
+            ChangeGravity(-30f, 3f, 1f);
+            gravText.ChangeText("High");
         }
     }
 
-    void ChangeGravity(float grav, float sp, float jump, bool low, bool high)
+    void ChangeGravity(float grav, float sp, float jump)
     {
         gravity = grav;
         speed = sp;
         jumpHeight = jump;
-
-        lowG.SetActive(low);
-        highG.SetActive(high);
     }
 }
