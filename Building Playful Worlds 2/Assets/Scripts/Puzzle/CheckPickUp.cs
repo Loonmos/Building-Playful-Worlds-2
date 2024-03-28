@@ -7,6 +7,7 @@ public class CheckPickUp : MonoBehaviour
 {
     ObjectGrabbable objectGrabbable;
     PlayerMovement playerMovement;
+    GameObject player;
 
     public UnityEvent QuarterObjectAdd;
     public UnityEvent HalfObjectAdd;
@@ -20,6 +21,12 @@ public class CheckPickUp : MonoBehaviour
 
     public GameObject platformOn;
     public GameObject platformOff;
+
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerMovement = player.GetComponent<PlayerMovement>();
+    }
 
     void Start()
     {
@@ -40,7 +47,7 @@ public class CheckPickUp : MonoBehaviour
             platformOn.SetActive(false);
             platformOff.SetActive(true);
 
-            playerMovement = other.GetComponent<PlayerMovement>();
+            playerMovement.TurnAbilityOnAndOff(); // turn off the players ability to change their gravity
 
             if (playerMovement.gravity == -10)
             {
@@ -64,6 +71,7 @@ public class CheckPickUp : MonoBehaviour
             platformOff.SetActive(true);
 
             objectGrabbable = other.GetComponent<ObjectGrabbable>();
+            objectGrabbable.CanChangeGravityOnAndOff(); // turn off the players ability to change this objects gravity
 
             if (objectGrabbable.gravity == -10)
             {
@@ -87,6 +95,7 @@ public class CheckPickUp : MonoBehaviour
             platformOff.SetActive(true);
 
             objectGrabbable = other.GetComponent<ObjectGrabbable>();
+            objectGrabbable.CanChangeGravityOnAndOff(); // turn off the players ability to change this objects gravity
 
             if (objectGrabbable.gravity == -10)
             {
@@ -112,7 +121,7 @@ public class CheckPickUp : MonoBehaviour
             platformOn.SetActive(true);
             platformOff.SetActive(false);
 
-            playerMovement = other.GetComponent<PlayerMovement>();
+            playerMovement.TurnAbilityOnAndOff(); // turn on the players ability to change their gravity
 
             if (playerMovement.gravity == -10)
             {
@@ -136,6 +145,7 @@ public class CheckPickUp : MonoBehaviour
             platformOff.SetActive(false);
 
             objectGrabbable = other.GetComponent<ObjectGrabbable>();
+            objectGrabbable.CanChangeGravityOnAndOff(); // turn on the players ability to change this objects gravity
 
             if (objectGrabbable.gravity == -10)
             {
@@ -159,6 +169,7 @@ public class CheckPickUp : MonoBehaviour
             platformOff.SetActive(false);
 
             objectGrabbable = other.GetComponent<ObjectGrabbable>();
+            objectGrabbable.CanChangeGravityOnAndOff(); // turn on the players ability to change this objects gravity
 
             if (objectGrabbable.gravity == -10)
             {

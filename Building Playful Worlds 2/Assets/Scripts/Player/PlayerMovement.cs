@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed = 12f;
     Vector3 velocity;
     public float gravity = -19.62f;
-    [SerializeField] private float mass = 60;
     public float jumpHeight = 3f;
 
     public Transform groundCheck;
@@ -24,9 +23,12 @@ public class PlayerMovement : MonoBehaviour
     public Transform starRegular;
     public Transform starCastSelf;
 
+    private bool useAbility;
+
     void Start()
     {
         gravity = -20f;
+        useAbility = true;
     }
 
     void Update()
@@ -40,7 +42,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButton("FocusSelf"))
         {
             starCrystal.position = starCastSelf.position;
-            FocusSelf();
+            if (useAbility == true)
+            {
+                FocusSelf();
+            }
         }
         else if (!Input.GetButton("FocusOther"))
         {
@@ -109,6 +114,11 @@ public class PlayerMovement : MonoBehaviour
             ChangeGravity(-30f, 6f, 1f);
             gravText.ChangeText("high");
         }
+    }
+
+    public void TurnAbilityOnAndOff()
+    {
+        useAbility = !useAbility;
     }
 
     void ChangeGravity(float grav, float sp, float jump)

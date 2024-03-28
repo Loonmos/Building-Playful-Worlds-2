@@ -20,6 +20,8 @@ public class ObjectGrabbable : MonoBehaviour
     private float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    private bool canChangeGravity;
+
     private void Start()
     {
         gravity = -20f;
@@ -27,6 +29,8 @@ public class ObjectGrabbable : MonoBehaviour
         objectNorm.SetActive(true);
         objectLow.SetActive(false);
         objectHigh.SetActive(false);
+
+        canChangeGravity = true;
     }
 
     private void Update()
@@ -72,29 +76,38 @@ public class ObjectGrabbable : MonoBehaviour
 
     public void ChangeObjGravity()
     {
-        if (Input.GetButtonDown("LowG"))
+        if (canChangeGravity == true)
         {
-            ChangeGravity(-10f);
-            objectNorm.SetActive(false);
-            objectLow.SetActive(true);
-            objectHigh.SetActive(false);
-        }
+            if (Input.GetButtonDown("LowG"))
+            {
+                ChangeGravity(-10f);
+                objectNorm.SetActive(false);
+                objectLow.SetActive(true);
+                objectHigh.SetActive(false);
+            }
 
-        if (Input.GetButtonDown("NormalG"))
-        {
-            ChangeGravity(-20f);
-            objectNorm.SetActive(true);
-            objectLow.SetActive(false);
-            objectHigh.SetActive(false);
-        }
+            if (Input.GetButtonDown("NormalG"))
+            {
+                ChangeGravity(-20f);
+                objectNorm.SetActive(true);
+                objectLow.SetActive(false);
+                objectHigh.SetActive(false);
+            }
 
-        if (Input.GetButtonDown("HighG"))
-        {
-            ChangeGravity(-30f);
-            objectNorm.SetActive(false);
-            objectLow.SetActive(false);
-            objectHigh.SetActive(true);
+            if (Input.GetButtonDown("HighG"))
+            {
+                ChangeGravity(-30f);
+                objectNorm.SetActive(false);
+                objectLow.SetActive(false);
+                objectHigh.SetActive(true);
+            }
         }
+        
+    }
+
+    public void CanChangeGravityOnAndOff()
+    {
+        canChangeGravity = !canChangeGravity;
     }
 
     void ChangeGravity(float grav)
