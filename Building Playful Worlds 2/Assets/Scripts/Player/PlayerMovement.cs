@@ -94,20 +94,20 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("LowG"))
         {
-            ChangeGravity(-10f, 12f, 5f);
-            gravText.ChangeText("Low");
+            ChangeGravity(-10f, 18f, 5f);
+            gravText.ChangeText("low");
         }
         
         if (Input.GetButtonDown("NormalG"))
         {
-            ChangeGravity(-20f, 6f, 3f);
-            gravText.ChangeText("Normal");
+            ChangeGravity(-20f, 12f, 3f);
+            gravText.ChangeText("normal");
         }
         
         if (Input.GetButtonDown("HighG"))
         {
-            ChangeGravity(-30f, 3f, 1f);
-            gravText.ChangeText("High");
+            ChangeGravity(-30f, 6f, 1f);
+            gravText.ChangeText("high");
         }
     }
 

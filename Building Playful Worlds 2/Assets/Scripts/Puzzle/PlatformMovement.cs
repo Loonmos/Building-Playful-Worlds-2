@@ -11,6 +11,9 @@ public class PlatformMovement : MonoBehaviour
     public bool continuousMovement;
     private bool startMoving;
 
+    public GameObject player;
+    public Transform playerPos;
+
     void Start()
     {
         continuousMovement = false;
@@ -41,6 +44,7 @@ public class PlatformMovement : MonoBehaviour
             if (continuousMovement == false)
             {
                 startMoving = false;
+                player.transform.position = playerPos.position;
             }
         }
     }
