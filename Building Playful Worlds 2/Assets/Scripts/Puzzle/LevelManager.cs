@@ -9,7 +9,10 @@ public class LevelManager : MonoBehaviour
 
     public List<GameObject> altarList = new List<GameObject>();
     [SerializeField] private bool altarsActive;
-    
+
+    public GameObject starOn;
+    public GameObject starOff;
+
     void Start()
     {
         
@@ -42,5 +45,25 @@ public class LevelManager : MonoBehaviour
             {
                 altarsActive = true;
             }
+
+        if (altarsActive == true)
+        {
+            TurnStarOn();
+        } else
+        {
+            TurnStarOff();
+        }
+    }
+
+    public void TurnStarOn()
+    {
+        starOn.SetActive(true);
+        starOff.SetActive(false);
+    }
+
+    public void TurnStarOff()
+    {
+        starOn.SetActive(false);
+        starOff.SetActive(true);
     }
 }

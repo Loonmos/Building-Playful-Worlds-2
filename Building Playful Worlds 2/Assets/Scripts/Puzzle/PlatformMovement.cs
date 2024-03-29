@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformMovement : MonoBehaviour
 {
     public List<Transform> levelTransformsList = new List<Transform>(); // use this instead of separate transforms
-    public int levelIndex;
+    [SerializeField] private int levelIndex;
 
     private float speed = 2f;
     public bool continuousMovement;
@@ -14,10 +14,14 @@ public class PlatformMovement : MonoBehaviour
     public GameObject player;
     public Transform playerPos;
 
+    public GameObject starOn;
+    public GameObject starOff;
+
     void Start()
     {
         continuousMovement = false;
         startMoving = false;
+        levelIndex = 1;
     }
 
     
@@ -45,6 +49,7 @@ public class PlatformMovement : MonoBehaviour
             {
                 startMoving = false;
                 player.transform.position = playerPos.position;
+                TurnStarOff();
             }
         }
     }
@@ -57,5 +62,11 @@ public class PlatformMovement : MonoBehaviour
     public void TurnOnContinuous()
     {
         continuousMovement = true;
+    }
+
+    public void TurnStarOff()
+    {
+        starOn.SetActive(false);
+        starOff.SetActive(true);
     }
 }
