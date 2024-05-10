@@ -557,7 +557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lun Marsman
+  m_text: Loonmos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: edbd68a3a51e3b94b84b8ac7e91f955b, type: 2}
   m_sharedMaterial: {fileID: 8844049550963403102, guid: edbd68a3a51e3b94b84b8ac7e91f955b, type: 2}
