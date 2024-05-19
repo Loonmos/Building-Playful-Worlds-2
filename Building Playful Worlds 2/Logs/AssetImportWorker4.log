@@ -1,0 +1,302 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.29f1 (204d6dc9ae1c) revision 2116973'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16010 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+60522
+Successfully changed project path to: C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2
+C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12756] Host "[IP] 192.168.68.114 [Port] 0 [Flags] 2 [Guid] 3215633951 [EditorId] 3215633951 [Version] 1048832 [Id] WindowsEditor(7,Lun) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [12756] Host "[IP] 192.168.68.114 [Port] 0 [Flags] 2 [Guid] 3215633951 [EditorId] 3215633951 [Version] 1048832 [Id] WindowsEditor(7,Lun) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 83.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.29f1 (204d6dc9ae1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3964 MB
+    Driver:   31.0.15.5161
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003533 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 54.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.463 seconds
+Domain Reload Profiling:
+	ReloadAssembly (463ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (323ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (76ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (187ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (54ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002357 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 51.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.838 seconds
+Domain Reload Profiling:
+	ReloadAssembly (838ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (683ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (368ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3564 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (2.8 MB). Loaded Objects now: 4043.
+Memory consumption went from 232.6 MB to 229.8 MB.
+Total: 2.769400 ms (FindLiveObjects: 0.177700 ms CreateObjectMapping: 0.082000 ms MarkObjects: 2.128600 ms  DeleteObjects: 0.377400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1464040.158372 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/Interact.fbx
+  artifactKey: Guid(4a412c425e347044d9bd20cf127cd4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/Interact.fbx using Guid(4a412c425e347044d9bd20cf127cd4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ca36d2d68c3543b76c57a0e4ed2b76') in 0.182433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.799425 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/WizardAnimControl.controller
+  artifactKey: Guid(2890c9060ce4f6b45b4082d87f47b27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/WizardAnimControl.controller using Guid(2890c9060ce4f6b45b4082d87f47b27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5814374a11e189e80efb43afcee71bbc') in 0.040311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.633006 seconds.
+  path: Assets/Animation/Statue
+  artifactKey: Guid(4d99abeae15c6e343a401bd2cb47ad1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Statue using Guid(4d99abeae15c6e343a401bd2cb47ad1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2045fc8d4b85b0799f55c7e7026e3dfe') in 0.013741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.785498 seconds.
+  path: Assets/Animation/Statue/Statue.controller
+  artifactKey: Guid(8725cde527c23d54f83a8d987eeae2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Statue/Statue.controller using Guid(8725cde527c23d54f83a8d987eeae2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4553fd46db94a66e1306050f677ffd43') in 0.003748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.559143 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations
+  artifactKey: Guid(193950663e37d184da99c9e8c1bbff55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations using Guid(193950663e37d184da99c9e8c1bbff55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ebf122cacbd3d432b0512284071f74') in 0.011641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062127 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/Attack01.fbx
+  artifactKey: Guid(3f2f5660b185f02479d526fb256acbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/Attack01.fbx using Guid(3f2f5660b185f02479d526fb256acbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d6bd75721f3148eba8fe36af892847') in 0.041810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/Attack02Start.fbx
+  artifactKey: Guid(7fdb60c8dc5c5ed429ede0d591bce079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/Attack02Start.fbx using Guid(7fdb60c8dc5c5ed429ede0d591bce079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fefdff0a83b027808a2732c6cd3fad4b') in 0.033162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/Attack03Maintain.fbx
+  artifactKey: Guid(84360086255e9b24eb56fb310a84754e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/Attack03Maintain.fbx using Guid(84360086255e9b24eb56fb310a84754e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1fdb6994166e682f7c15efdc9fee5b') in 0.038014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/Attack03Start.fbx
+  artifactKey: Guid(4fce6296ed4db2c49b2b02fb8c9bea7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/Attack03Start.fbx using Guid(4fce6296ed4db2c49b2b02fb8c9bea7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e57d3763e0da02bd69a9855f33bb3cd') in 0.043079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/Attack04.fbx
+  artifactKey: Guid(8692461656b17c84981f4c64c15341fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/Attack04.fbx using Guid(8692461656b17c84981f4c64c15341fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f960d5fcc2fc956bf01505a7ae8e8727') in 0.052563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/BattleWalkForward.fbx
+  artifactKey: Guid(d08cb4da34e0ede4c82e968040ea86c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/BattleWalkForward.fbx using Guid(d08cb4da34e0ede4c82e968040ea86c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435aea47689b734c7e943a526d4ddd3c') in 0.047213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Characters/WizardPolyArt/Animations/BattleWalkLeft.fbx
+  artifactKey: Guid(cb2d7c8eb8d682d4db58ae9673579e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Characters/WizardPolyArt/Animations/BattleWalkLeft.fbx using Guid(cb2d7c8eb8d682d4db58ae9673579e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8108aa0d338f9a933e3f0a6660055215') in 0.031964 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002626 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Domain Reload Profiling:
+	ReloadAssembly (902ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (701ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (227ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (326ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3479 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (2.8 MB). Loaded Objects now: 4071.
+Memory consumption went from 241.0 MB to 238.2 MB.
+Total: 3.721200 ms (FindLiveObjects: 0.260500 ms CreateObjectMapping: 0.114100 ms MarkObjects: 2.839100 ms  DeleteObjects: 0.506400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

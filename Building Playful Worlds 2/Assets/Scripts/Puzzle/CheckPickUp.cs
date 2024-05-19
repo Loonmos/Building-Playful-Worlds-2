@@ -22,6 +22,9 @@ public class CheckPickUp : MonoBehaviour
     public GameObject platformOn;
     public GameObject platformOff;
 
+    public AudioSource enterClick;
+    public AudioSource exitClick;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -42,6 +45,8 @@ public class CheckPickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) // check if player and what gravity they have
     {
+        enterClick.Play();
+
         if (other.tag == "Player")
         {
             platformOn.SetActive(false);
@@ -116,6 +121,8 @@ public class CheckPickUp : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        exitClick.Play();
+
         if (other.tag == "Player") // check if player and what gravity they have
         {
             platformOn.SetActive(true);

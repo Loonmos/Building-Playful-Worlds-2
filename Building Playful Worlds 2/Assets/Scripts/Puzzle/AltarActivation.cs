@@ -18,6 +18,8 @@ public class AltarActivation : MonoBehaviour
     public float crystalValue;
     [SerializeField] private float valueCount;
 
+    public AudioSource activateSound;
+
     void Start()
     {
         lightPathOff.SetActive(true);
@@ -52,6 +54,7 @@ public class AltarActivation : MonoBehaviour
         if (valueCount == crystalValue)
         {
             CrystalOn();
+            activateSound.Play();
             ActivatedEvent.Invoke();
             CheckAltarEvent.Invoke();
         }

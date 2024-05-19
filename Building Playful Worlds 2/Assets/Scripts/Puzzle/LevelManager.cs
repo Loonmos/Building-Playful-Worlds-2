@@ -6,12 +6,15 @@ using UnityEngine.Events;
 public class LevelManager : MonoBehaviour
 {
     public UnityEvent PlatformMove;
+    public UnityEvent PuzzleCompletion;
 
     public List<GameObject> altarList = new List<GameObject>();
     [SerializeField] private bool altarsActive;
 
     public GameObject starOn;
     public GameObject starOff;
+
+    public bool levelPuzzle;
 
     void Start()
     {
@@ -49,6 +52,12 @@ public class LevelManager : MonoBehaviour
         if (altarsActive == true)
         {
             TurnStarOn();
+
+            if (levelPuzzle == true)
+            {
+                PuzzleCompletion.Invoke();
+            }
+
         } else
         {
             TurnStarOff();

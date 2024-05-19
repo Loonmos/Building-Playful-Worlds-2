@@ -15,7 +15,7 @@ C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-57918
+57675
 Successfully changed project path to: C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2
 C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/demim/Github/Building-Playful-Worlds-2/Building Playful Worlds 2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24804] Host "[IP] 10.3.26.32 [Port] 0 [Flags] 2 [Guid] 4089951425 [EditorId] 4089951425 [Version] 1048832 [Id] WindowsEditor(7,Lun) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11888] Host "[IP] 10.3.26.129 [Port] 0 [Flags] 2 [Guid] 1964158594 [EditorId] 1964158594 [Version] 1048832 [Id] WindowsEditor(7,Lun) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [24804] Host "[IP] 10.3.26.32 [Port] 0 [Flags] 2 [Guid] 4089951425 [EditorId] 4089951425 [Version] 1048832 [Id] WindowsEditor(7,Lun) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11888] Host "[IP] 10.3.26.129 [Port] 0 [Flags] 2 [Guid] 1964158594 [EditorId] 1964158594 [Version] 1048832 [Id] WindowsEditor(7,Lun) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 228.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 140.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.29f1 (204d6dc9ae1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Resources/UnitySubsystems
@@ -67,44 +67,371 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.506701 seconds.
+Registered in 0.005368 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 98.30 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 101.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 13.242 seconds
+- Completed reload, in  0.825 seconds
 Domain Reload Profiling:
-	ReloadAssembly (13242ms)
-		BeginReloadAssembly (10056ms)
+	ReloadAssembly (826ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1890ms)
-			LoadAssemblies (10069ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (587ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1426ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (337ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (351ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (98ms)
+				RefreshPlugins (101ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (64ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006762 seconds.
+Registered in 0.005118 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 95.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.508 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1508ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1215ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (647ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (421ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.22 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3563 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (2.8 MB). Loaded Objects now: 4042.
+Memory consumption went from 232.2 MB to 229.4 MB.
+Total: 5.107400 ms (FindLiveObjects: 0.296700 ms CreateObjectMapping: 0.127500 ms MarkObjects: 3.966500 ms  DeleteObjects: 0.714900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1025598.164679 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/house_lvl5.prefab
+  artifactKey: Guid(6f3e0814d7f66ff44a590734f01c6068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/house_lvl5.prefab using Guid(6f3e0814d7f66ff44a590734f01c6068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3800d9ce7fbb60280c23df6f9030732') in 0.228264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/farm_house_lvl7.prefab
+  artifactKey: Guid(2c121b1857a760c4f9ef7b0e4b09864c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/farm_house_lvl7.prefab using Guid(2c121b1857a760c4f9ef7b0e4b09864c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7425287cc738debfbd20e7317958d22') in 0.274453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/crate.prefab
+  artifactKey: Guid(3f75115cad4290d40a5eb8d65a599852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/crate.prefab using Guid(3f75115cad4290d40a5eb8d65a599852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1672d8affdbdd0bea759cbfa41dc2006') in 0.094584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/tower_lvl2.prefab
+  artifactKey: Guid(afa55699f228cf2438920a8d9af4cd6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/tower_lvl2.prefab using Guid(afa55699f228cf2438920a8d9af4cd6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79ecb51074c1c04bd9c66c8cb968b50') in 0.252748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/fence.prefab
+  artifactKey: Guid(956556a458e052645a695d553424942e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/fence.prefab using Guid(956556a458e052645a695d553424942e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e6bf2916b47063746907049e9f1973') in 0.159657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/farm_lvl2.prefab
+  artifactKey: Guid(2f730ac7abafbbb4a87d4d03cbe47846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/farm_lvl2.prefab using Guid(2f730ac7abafbbb4a87d4d03cbe47846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b519e87bd49c48dadd427411fcdc59') in 0.156406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/house_lvl7.prefab
+  artifactKey: Guid(e3fdc4200313b5e43973175595f50a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/house_lvl7.prefab using Guid(e3fdc4200313b5e43973175595f50a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60889e99e4423f5a6d9665dc07753ec7') in 0.149421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/farm_lvl6.prefab
+  artifactKey: Guid(70a1d25cf2c8f554a8834daff6ea3aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/farm_lvl6.prefab using Guid(70a1d25cf2c8f554a8834daff6ea3aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567c558c8d162f70d88212ee527bd2ec') in 0.165336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/carrot2.prefab
+  artifactKey: Guid(331d71b41546cac4882040d57f3dd3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/carrot2.prefab using Guid(331d71b41546cac4882040d57f3dd3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c70f9e42a9fe0e1c090b29953c8601') in 0.070050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/house_lvl1.prefab
+  artifactKey: Guid(122b0584add6e9641b3a798f66fa32a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/house_lvl1.prefab using Guid(122b0584add6e9641b3a798f66fa32a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ddf958709057faa53c1e72ac100527') in 0.097820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/tomato1.prefab
+  artifactKey: Guid(54fd9a4c732e5e94da8fd65b27cf301f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/tomato1.prefab using Guid(54fd9a4c732e5e94da8fd65b27cf301f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baac52a7ea92e5448b9fe9f46ba6a39e') in 0.135671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.515230 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/textures/towers.tga
+  artifactKey: Guid(afca6969a3148ab4a8816f95f2d9092c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/textures/towers.tga using Guid(afca6969a3148ab4a8816f95f2d9092c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7ee727078ebac5902581a6a6970889') in 0.057820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.703123 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/textures/farms.tga
+  artifactKey: Guid(39d49bf65bdc2d240b6298e0bd38703c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/textures/farms.tga using Guid(39d49bf65bdc2d240b6298e0bd38703c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d90a61ec7de4d75d40630953959bc2') in 0.032217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 206.292705 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/tomato2.prefab
+  artifactKey: Guid(6fd64ca8439abd14d91ad354ea33d426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/tomato2.prefab using Guid(6fd64ca8439abd14d91ad354ea33d426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ad6b1bda2a7f9671806cd52005556b') in 0.019960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 575.135015 seconds.
+  path: Assets/Models/Buildings/simple_low_poly_village_buildings/models/shovel.prefab
+  artifactKey: Guid(ac0271417e7765040b946740e0129ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Buildings/simple_low_poly_village_buildings/models/shovel.prefab using Guid(ac0271417e7765040b946740e0129ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a099f81bbfb5361f3d32237b29886fc') in 0.041500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 259.214922 seconds.
+  path: Assets/Scenes/TestBiome.unity
+  artifactKey: Guid(5391cd3c9ebe4d24cb4afe5afb995b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TestBiome.unity using Guid(5391cd3c9ebe4d24cb4afe5afb995b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7dd1f6fd6c236aca885e9fc8995aa02') in 0.032383 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005679 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.370 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1371ms)
+		BeginReloadAssembly (187ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1068ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (329ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (508ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (385ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3479 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (2.8 MB). Loaded Objects now: 4067.
+Memory consumption went from 227.9 MB to 225.2 MB.
+Total: 4.311200 ms (FindLiveObjects: 0.333900 ms CreateObjectMapping: 0.125500 ms MarkObjects: 3.321800 ms  DeleteObjects: 0.528600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005438 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.379 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1380ms)
+		BeginReloadAssembly (196ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1063ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (511ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3479 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (2.8 MB). Loaded Objects now: 4082.
+Memory consumption went from 227.9 MB to 225.2 MB.
+Total: 4.628100 ms (FindLiveObjects: 0.523100 ms CreateObjectMapping: 0.271500 ms MarkObjects: 3.315500 ms  DeleteObjects: 0.516100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005619 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\demim\Github\Building-Playful-Worlds-2\Building Playful Worlds 2\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.343 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1344ms)
+		BeginReloadAssembly (180ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1048ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (316ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (518ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (392ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3479 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (2.8 MB). Loaded Objects now: 4097.
+Memory consumption went from 228.0 MB to 225.2 MB.
+Total: 4.148000 ms (FindLiveObjects: 0.288600 ms CreateObjectMapping: 0.126100 ms MarkObjects: 3.217600 ms  DeleteObjects: 0.514200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

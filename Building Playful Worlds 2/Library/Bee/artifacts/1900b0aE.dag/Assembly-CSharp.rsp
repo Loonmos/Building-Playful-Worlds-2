@@ -366,6 +366,7 @@
 "Assets/Scripts/Puzzle/NewAbility.cs"
 "Assets/Scripts/Puzzle/ObjectGrabbable.cs"
 "Assets/Scripts/Puzzle/PlatformMovement.cs"
+"Assets/Scripts/Puzzle/StatueStates.cs"
 "Assets/Scripts/Tutorial.cs"
 "Assets/Scripts/UI/GravityText.cs"
 -langversion:9.0
