@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1191763120824311428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348705090964503611}
+  m_Layer: 3
+  m_Name: HoldPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1348705090964503611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191763120824311428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3801338794466000985}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3482160426251847990
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +92,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3801338794466000985}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3801338793508399821
 GameObject:
@@ -169,6 +200,9 @@ GameObject:
   - component: {fileID: 3801338794269415921}
   - component: {fileID: 3801338794269415920}
   - component: {fileID: 3801338794269415923}
+  - component: {fileID: 1773549292}
+  - component: {fileID: 1773549293}
+  - component: {fileID: 2807641273158534554}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -237,9 +271,28 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 384
+  shroomMask:
+    serializedVersion: 2
+    m_Bits: 512
   starCrystal: {fileID: 3374399390714834104}
   starRegular: {fileID: 3801338793729052430}
   starCastSelf: {fileID: 3801338794378767153}
+  velocityText: {fileID: 0}
+  TouchGround:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2807641273158534554}
+        m_TargetAssemblyTypeName: PlayerAbility, Assembly-CSharp
+        m_MethodName: ResetUses
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3801338794269415920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +308,7 @@ MonoBehaviour:
   playerCameraTransform: {fileID: 3801338794466000985}
   pickupLayerMask:
     serializedVersion: 2
-    m_Bits: 257
+    m_Bits: 256
   grabPoint: {fileID: 3801338794024741477}
 --- !u!114 &3801338794269415923
 MonoBehaviour:
@@ -277,6 +330,59 @@ MonoBehaviour:
   starCrystal: {fileID: 3374399390714834104}
   starRegular: {fileID: 3801338793729052430}
   starCastObj: {fileID: 3801338793475179229}
+--- !u!114 &1773549292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801338794269415924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53cb35a73ad35540bec96143ad9b177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crystalText: {fileID: 0}
+  crystalAmount: 0
+--- !u!114 &1773549293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801338794269415924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d4f9b34f5aada4d9dee6a979bbe0df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 1773549292}
+  playerCameraTransform: {fileID: 3801338794466000985}
+  crystalLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  insertLayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
+--- !u!114 &2807641273158534554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801338794269415924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccc424dcf461de42b094efb27465a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charController: {fileID: 3801338794269415927}
+  starCrystal: {fileID: 3374399390714834104}
+  crystalHoldPoint: {fileID: 1348705090964503611}
+  starRegular: {fileID: 3801338793729052430}
+  tpTransform: {fileID: 0}
+  canUse: 1
+  uses: 0
 --- !u!1 &3801338794378767158
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +412,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3801338794466000985}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3801338794466000988
 GameObject:
@@ -342,6 +448,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3801338794024741477}
+  - {fileID: 1348705090964503611}
   - {fileID: 3801338794378767153}
   - {fileID: 3801338793475179229}
   m_Father: {fileID: 3801338794269415926}
@@ -571,6 +678,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.704
       objectReference: {fileID: 0}
@@ -610,6 +729,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1188583675507240587, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
       propertyPath: m_Name
       value: StarCrystal
@@ -621,6 +744,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
   m_PrefabInstance: {fileID: 4515690751148056083}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3374399390715064472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1188583675507240587, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
+  m_PrefabInstance: {fileID: 4515690751148056083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1501693463
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374399390715064472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: fce0ecff534816b49af71ef31033c259, type: 3}
 --- !u!1001 &6346224633845368498
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,16 +15,23 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 3f;
 
     public Transform groundCheck;
-    
+
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
+
+    public LayerMask shroomMask;
+    bool isShroomed;
 
     public Transform starCrystal;
     public Transform starRegular;
     public Transform starCastSelf;
 
     private bool useAbility;
+
+    public TextMeshProUGUI velocityText;
+
+    public UnityEvent TouchGround;
 
     void Start()
     {
@@ -33,7 +41,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Ground();
+        CheckGround();
+        CheckShroom();
 
         MovePlayer();
         Jump(gravity);
@@ -47,19 +56,38 @@ public class PlayerMovement : MonoBehaviour
                 FocusSelf();
             }
         }
-        else if (!Input.GetButton("FocusOther"))
+        
+        if (Input.GetButtonUp("FocusSelf"))
         {
             starCrystal.position = starRegular.position;
         }
+
+
+            velocityText.SetText("Velocity : " + velocity.y);
     }
 
-    void Ground()
+    void CheckGround()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); // checks if player is on ground
 
         if (isGrounded && velocity.y < 0) // resets velocity when player is grounded
         {
             velocity.y = -2f;
+        }
+
+        if (isGrounded)
+        {
+            TouchGround.Invoke();
+        }
+    }
+
+    void CheckShroom()
+    {
+        isShroomed = Physics.CheckSphere(groundCheck.position, groundDistance, shroomMask); // checks if player hits the shroom
+
+        if (isShroomed)
+        {
+            velocity.y = -velocity.y;
         }
     }
 

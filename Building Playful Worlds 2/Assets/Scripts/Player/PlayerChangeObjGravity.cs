@@ -32,5 +32,10 @@ public class PlayerChangeObjGravity : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetButtonUp("FocusOther"))
+        {
+            starCrystal.position = starRegular.position;
+        }
     }
 }
