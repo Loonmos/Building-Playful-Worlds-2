@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     public float gravity = -19.62f;
     public float jumpHeight = 3f;
+    public int jumpUses = 1;
 
     public Transform groundCheck;
 
@@ -45,8 +46,13 @@ public class PlayerMovement : MonoBehaviour
         CheckShroom();
 
         MovePlayer();
-        Jump(gravity);
         ApplyGravity(gravity);
+
+        if (Input.GetButtonDown("Jump") && jumpUses >= 1)
+            {
+                Jump(gravity);
+            }
+
 
         if (Input.GetButton("FocusSelf"))
         {
@@ -77,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded)
         {
+            jumpUses = 1;
             TouchGround.Invoke();
         }
     }
@@ -110,10 +117,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump(float grav)
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * grav);
-        }
+        velocity.y = Mathf.Sqrt(jumpHeight * -2f * grav);
+        jumpUses --;
     }
 
     void ApplyGravity(float grav)

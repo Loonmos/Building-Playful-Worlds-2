@@ -12,7 +12,7 @@ public class PlayerInventory : MonoBehaviour
 
     void Start()
     {
-        crystalAmount = 0;
+        //crystalAmount = 0;
         crystalText.SetText("Crystals : " + crystalAmount);
     }
 

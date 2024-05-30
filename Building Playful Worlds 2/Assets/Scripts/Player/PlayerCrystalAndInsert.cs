@@ -5,22 +5,28 @@ using UnityEngine;
 public class PlayerCrystalAndInsert : MonoBehaviour
 {
     public PlayerInventory playerInventory;
+    public StarCrystalActive starActive;
 
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private LayerMask crystalLayerMask;
     [SerializeField] private LayerMask insertLayerMask;
+    [SerializeField] private LayerMask starLayerMask;
 
     private CrystalGrabbable crystalGrabbable;
     private InsertCrystal insertCrystal;
     private float pickupDistance = 5f;
 
-    // Start is called before the first frame update
+    public GameObject starCrystalPlayer;
+    public GameObject starCrystalGround;
+    public GameObject barrier;
+
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetButtonDown("QKey"))
@@ -39,6 +45,13 @@ public class PlayerCrystalAndInsert : MonoBehaviour
                 {
                     insertCrystal.CrystalInserted();
                 }
+            }
+
+            if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHitHitHit, pickupDistance, starLayerMask))
+            {
+                Destroy(starCrystalGround);
+                Destroy(barrier);
+                starActive.TurnOn();
             }
         }
 

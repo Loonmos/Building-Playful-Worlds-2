@@ -266,6 +266,7 @@ MonoBehaviour:
   speed: 12
   gravity: -9.81
   jumpHeight: 3
+  jumpUses: 1
   groundCheck: {fileID: 3801338793508399820}
   groundDistance: 0.4
   groundMask:
@@ -357,6 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1773549292}
+  starActive: {fileID: 418375351175961028}
   playerCameraTransform: {fileID: 3801338794466000985}
   crystalLayerMask:
     serializedVersion: 2
@@ -364,6 +366,12 @@ MonoBehaviour:
   insertLayerMask:
     serializedVersion: 2
     m_Bits: 2048
+  starLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  starCrystalPlayer: {fileID: 0}
+  starCrystalGround: {fileID: 0}
+  barrier: {fileID: 0}
 --- !u!114 &2807641273158534554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,10 +385,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 3801338794269415927}
+  playerMovement: {fileID: 0}
   starCrystal: {fileID: 3374399390714834104}
   crystalHoldPoint: {fileID: 1348705090964503611}
   starRegular: {fileID: 3801338793729052430}
   tpTransform: {fileID: 0}
+  lerpSpeed: 5
+  tpSpeed: 5
+  tpBuffer: 0
   canUse: 1
   uses: 0
 --- !u!1 &3801338794378767158
@@ -763,6 +775,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: fce0ecff534816b49af71ef31033c259, type: 3}
+--- !u!114 &418375351175961028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374399390715064472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742a404c5e2b5c34a9f5ca7751894772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starActive: 0
 --- !u!1001 &6346224633845368498
 PrefabInstance:
   m_ObjectHideFlags: 0

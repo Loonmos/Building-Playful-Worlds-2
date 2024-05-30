@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EndofPuzzle : MonoBehaviour
 {
+    public UnityEvent endOfTemple;
+
     public GameObject endScreen;
 
-    private float endTimer = 10;
+    private float endReturn = 10;
+    private float endQuit = 60;
     
     void Start()
     {
@@ -22,12 +26,19 @@ public class EndofPuzzle : MonoBehaviour
 
     public void StartTimer()
     {
-        StartCoroutine(EndTimer());
+        StartCoroutine(EndingQuit());
     }
 
-    IEnumerator EndTimer()
+    IEnumerator EndingReturn()
     {
-        yield return new WaitForSeconds(endTimer);
+        yield return new WaitForSeconds(endReturn);
+
+        endOfTemple.Invoke();
+    }
+
+    IEnumerator EndingQuit()
+    {
+        yield return new WaitForSeconds(endQuit);
 
         Time.timeScale = 0;
         endScreen.SetActive(true);

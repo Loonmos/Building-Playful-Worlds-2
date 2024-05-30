@@ -9,6 +9,7 @@ TagManager:
   - PickUpPlace
   - SmallPickUp
   - BigPickUp
+  - StarCrystal
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Shroom
   - CrystalPickup
   - InsertCrystal
-  - 
+  - StarCrystal
   - 
   - 
   - 
