@@ -36,7 +36,7 @@ public class PlayerCrystalAndInsert : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("QKey"))
+        if (Input.GetMouseButtonDown(0))
         {
             if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickupDistance, crystalLayerMask))
             {

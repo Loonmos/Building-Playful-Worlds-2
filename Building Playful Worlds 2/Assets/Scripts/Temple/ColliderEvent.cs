@@ -23,4 +23,8 @@ public class ColliderEvent : MonoBehaviour
         gameManager.SaveGameTemple();
     }
 
+    public void SetInactive()
+    {
+        gameObject.SetActive(false);
+    }
 }

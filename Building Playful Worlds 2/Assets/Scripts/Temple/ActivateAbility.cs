@@ -5,6 +5,7 @@ using UnityEngine;
 public class ActivateAbility : MonoBehaviour
 {
     private GameManager gameManager;
+    public PlatformMovement platformMove;
 
     public GameObject player;
     public PlayerAbility playerAbility;

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerPickUpDrop : MonoBehaviour
 {
+    public PlayerMovement playerMove;
+    public ThirdPersonMovement thirdMove;
+
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private LayerMask pickupLayerMask;
     [SerializeField] private Transform grabPoint;
@@ -11,6 +14,9 @@ public class PlayerPickUpDrop : MonoBehaviour
     private ObjectGrabbable objectGrabbable;
 
     private float pickupDistance = 5f;
+    [SerializeField] private float scroll = 0;
+    public float scrollValue;
+    [SerializeField] private bool isHoldingSmt = false;
 
     void Start()
     {
@@ -19,7 +25,7 @@ public class PlayerPickUpDrop : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("QKey"))
+        if (Input.GetMouseButtonDown(0)) // press left mouse button to pick up or drop
         {
             if (objectGrabbable == null) // not carrying an object, try to grab
             {
@@ -27,15 +33,58 @@ public class PlayerPickUpDrop : MonoBehaviour
                 {
                     if (raycastHit.transform.TryGetComponent(out objectGrabbable)) // if the raycast hits an object with the script
                     {
-                        objectGrabbable.Grab(grabPoint);
+                        playerMove.canChangeGravSelf = false;
+                        //thirdMove.canChangeGravSelf = false;
+                        objectGrabbable.Grab(grabPoint); // object is picked up
+                        isHoldingSmt = true; 
                     }
                 }
             }
             else // currently carrying smt, drop
             {
-                objectGrabbable.Drop();
+                playerMove.canChangeGravSelf = true;
+                //thirdMove.canChangeGravSelf = true;
+                objectGrabbable.Drop(); // object is dropped
+                isHoldingSmt = false;
                 objectGrabbable = null;
             }
+        }
+
+        if (isHoldingSmt == true)
+        {
+            ChangeObjectGrav();
+        }
+    }
+
+    void ChangeObjectGrav()
+    {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            scroll += scrollValue;
+            // change starcrystal pos
+        }
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            scroll -= scrollValue;
+            // change starcrystal pos
+        }
+
+        if (scroll >= 1)
+        {
+            scroll = 1;
+            objectGrabbable.SetGravHigh();
+        }
+
+        if (scroll == 0)
+        {
+            objectGrabbable.SetGravNormal();
+        }
+
+        if (scroll <= -1)
+        {
+            scroll = -1;
+            objectGrabbable.SetGravLow();
         }
     }
 }

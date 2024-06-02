@@ -383,6 +383,7 @@
 "Assets/Scripts/Temple/ColliderEvent.cs"
 "Assets/Scripts/Temple/InsertCrystal.cs"
 "Assets/Scripts/Temple/OpenTemple.cs"
+"Assets/Scripts/Testing/ThirdPersonMovement.cs"
 "Assets/Scripts/Tutorial.cs"
 "Assets/Scripts/UI/GravityText.cs"
 -langversion:9.0

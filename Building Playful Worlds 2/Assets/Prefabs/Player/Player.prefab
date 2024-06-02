@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191763120824311428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -264,9 +264,13 @@ MonoBehaviour:
   controller: {fileID: 3801338794269415927}
   gravText: {fileID: 0}
   speed: 12
+  scroll: 0
+  scrollValue: 0.5
+  canChangeGravSelf: 0
   gravity: -9.81
   jumpHeight: 3
   jumpUses: 1
+  jumpResetCooldown: 0.5
   groundCheck: {fileID: 3801338793508399820}
   groundDistance: 0.4
   groundMask:
@@ -306,11 +310,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20934840738ee3e41bfd7a4e8e96d165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMove: {fileID: 3801338794269415921}
   playerCameraTransform: {fileID: 3801338794466000985}
   pickupLayerMask:
     serializedVersion: 2
     m_Bits: 256
   grabPoint: {fileID: 3801338794024741477}
+  scroll: 0
+  scrollValue: 0.5
+  isHoldingSmt: 0
 --- !u!114 &3801338794269415923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +326,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3801338794269415924}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df0a23dc0874fef4da3fde1f5ae651a5, type: 3}
   m_Name: 
@@ -368,8 +376,8 @@ MonoBehaviour:
     m_Bits: 2048
   starLayerMask:
     serializedVersion: 2
-    m_Bits: 0
-  starCrystalPlayer: {fileID: 0}
+    m_Bits: 4096
+  starCrystalPlayer: {fileID: 3374399390715064472}
   starCrystalGround: {fileID: 0}
   barrier: {fileID: 0}
 --- !u!114 &2807641273158534554
@@ -385,15 +393,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 3801338794269415927}
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 3801338794269415921}
   starCrystal: {fileID: 3374399390714834104}
   crystalHoldPoint: {fileID: 1348705090964503611}
   starRegular: {fileID: 3801338793729052430}
   tpTransform: {fileID: 0}
-  lerpSpeed: 5
-  tpSpeed: 5
-  tpBuffer: 0
-  canUse: 1
+  lerpSpeed: 3
+  tpSpeed: 10
+  tpBuffer: 0.1
+  canUse: 0
   uses: 0
 --- !u!1 &3801338794378767158
 GameObject:

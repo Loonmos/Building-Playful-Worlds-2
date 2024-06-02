@@ -10,10 +10,18 @@ public class PlayerMovement : MonoBehaviour
     public GravityText gravText;
 
     [SerializeField] private float speed = 12f;
+    
+    [SerializeField] private float scroll = 0;
+    public float scrollValue;
+    public bool canChangeGravSelf;
+    
     Vector3 velocity;
     public float gravity = -19.62f;
+    
     public float jumpHeight = 3f;
     public int jumpUses = 1;
+    public float jumpResetCooldown;
+    private bool canReset;
 
     public Transform groundCheck;
 
@@ -38,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
     {
         gravity = -20f;
         useAbility = true;
+        canReset = true;
+        canChangeGravSelf = true;
     }
 
     void Update()
@@ -48,28 +58,29 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
         ApplyGravity(gravity);
 
+        if (canChangeGravSelf == true)
+        {
+            ChangeGravSelf();
+        }
+        
         if (Input.GetButtonDown("Jump") && jumpUses >= 1)
             {
                 Jump(gravity);
             }
 
-
-        if (Input.GetButton("FocusSelf"))
-        {
-            starCrystal.position = starCastSelf.position;
-            if (useAbility == true)
-            {
-                FocusSelf();
-            }
-        }
+        //if (Input.GetButton("FocusSelf"))
+        //{
+        //    starCrystal.position = starCastSelf.position;
+        //    if (useAbility == true)
+        //    {
+        //        FocusSelf();
+        //    }
+        //}
         
-        if (Input.GetButtonUp("FocusSelf"))
-        {
-            starCrystal.position = starRegular.position;
-        }
-
-
-            //velocityText.SetText("Velocity : " + velocity.y);
+        //if (Input.GetButtonUp("FocusSelf"))
+        //{
+        //    starCrystal.position = starRegular.position;
+        //}
     }
 
     void CheckGround()
@@ -83,7 +94,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded)
         {
-            jumpUses = 1;
+            if (canReset == true)
+            {
+                jumpUses = 1;
+            }
             TouchGround.Invoke();
         }
     }
@@ -118,7 +132,17 @@ public class PlayerMovement : MonoBehaviour
     void Jump(float grav)
     {
         velocity.y = Mathf.Sqrt(jumpHeight * -2f * grav);
-        jumpUses --;
+        jumpUses -= 1;
+        StartCoroutine(JumpCooldown());
+    }
+
+    IEnumerator JumpCooldown()
+    {
+        canReset = false;
+
+        yield return new WaitForSeconds(jumpResetCooldown);
+
+        canReset = true;
     }
 
     void ApplyGravity(float grav)
@@ -126,6 +150,41 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += grav * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    void ChangeGravSelf()
+    {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            scroll += scrollValue;
+            // change starcrystal pos
+        }
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            scroll -= scrollValue;
+            // change starcrystal pos
+        }
+
+        if (scroll >= 1)
+        {
+            scroll = 1;
+            ChangeGravity(-30f, 6f, 1f);
+            gravText.ChangeText("high");
+        }
+
+        if (scroll == 0)
+        {
+            ChangeGravity(-20f, 12f, 3f);
+            gravText.ChangeText("normal");
+        }
+
+        if (scroll <= -1)
+        {
+            scroll = -1;
+            ChangeGravity(-10f, 18f, 5f);
+            gravText.ChangeText("low");
+        }
     }
 
     void FocusSelf()

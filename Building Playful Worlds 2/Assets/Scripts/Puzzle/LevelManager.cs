@@ -8,8 +8,10 @@ public class LevelManager : MonoBehaviour
     public UnityEvent PlatformMove;
     public UnityEvent PuzzleCompletion;
 
+    public PlatformMovement platformMove;
+
     public List<GameObject> altarList = new List<GameObject>();
-    [SerializeField] private bool altarsActive;
+    public bool altarsActive;
 
     public GameObject starOn;
     public GameObject starOff;
@@ -27,13 +29,13 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player" && altarsActive == true)
-        {
-            PlatformMove.Invoke();
-        }
-    }
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.tag == "Player" && altarsActive == true)
+    //    {
+    //        PlatformMove.Invoke();
+    //    }
+    //}
 
     public void CheckAltars()
     {
@@ -52,6 +54,7 @@ public class LevelManager : MonoBehaviour
         if (altarsActive == true)
         {
             TurnStarOn();
+            platformMove.canMove = true;
 
             if (levelPuzzle == true)
             {
@@ -61,6 +64,7 @@ public class LevelManager : MonoBehaviour
         } else
         {
             TurnStarOff();
+            platformMove.canMove = false;
         }
     }
 

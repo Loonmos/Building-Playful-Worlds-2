@@ -7,6 +7,7 @@ public class PlayerAbility : MonoBehaviour
     private GameManager gameManager;
     public CharacterController charController;
     public PlayerMovement playerMovement;
+    public ThirdPersonMovement thirdMove;
 
     public Transform starCrystal;
     public Transform crystalHoldPoint;
@@ -34,6 +35,7 @@ public class PlayerAbility : MonoBehaviour
 
         charController.enabled = true;
         playerMovement.enabled = true;
+        //thirdMove.enabled = true;
 
         positioning = false;
         teleporting = false;
@@ -65,6 +67,7 @@ public class PlayerAbility : MonoBehaviour
         {
             charController.enabled = false;
             playerMovement.enabled = false;
+            //thirdMove.enabled = false;
 
             Vector3 newPos2 = Vector3.Lerp(transform.position, tpTransform.position, Time.deltaTime * tpSpeed);
             transform.position = newPos2;
@@ -75,6 +78,7 @@ public class PlayerAbility : MonoBehaviour
             {
                 charController.enabled = true;
                 playerMovement.enabled = true;
+                //thirdMove.enabled = true;
                 starCrystal.position = starRegular.position;
                 teleporting = false;
             }

@@ -78,31 +78,55 @@ public class ObjectGrabbable : MonoBehaviour
     {
         if (canChangeGravity == true)
         {
-            if (Input.GetButtonDown("LowG"))
-            {
-                ChangeGravity(-10f);
-                objectNorm.SetActive(false);
-                objectLow.SetActive(true);
-                objectHigh.SetActive(false);
-            }
+            //if (Input.GetButtonDown("LowG"))
+            //{
+            //    ChangeGravity(-10f);
+            //    objectNorm.SetActive(false);
+            //    objectLow.SetActive(true);
+            //    objectHigh.SetActive(false);
+            //}
 
-            if (Input.GetButtonDown("NormalG"))
-            {
-                ChangeGravity(-20f);
-                objectNorm.SetActive(true);
-                objectLow.SetActive(false);
-                objectHigh.SetActive(false);
-            }
+            //if (Input.GetButtonDown("NormalG"))
+            //{
+            //    ChangeGravity(-20f);
+            //    objectNorm.SetActive(true);
+            //    objectLow.SetActive(false);
+            //    objectHigh.SetActive(false);
+            //}
 
-            if (Input.GetButtonDown("HighG"))
-            {
-                ChangeGravity(-30f);
-                objectNorm.SetActive(false);
-                objectLow.SetActive(false);
-                objectHigh.SetActive(true);
-            }
+            //if (Input.GetButtonDown("HighG"))
+            //{
+            //    ChangeGravity(-30f);
+            //    objectNorm.SetActive(false);
+            //    objectLow.SetActive(false);
+            //    objectHigh.SetActive(true);
+            //}
         }
         
+    }
+
+    public void SetGravLow()
+    {
+        ChangeGravity(-10f);
+        objectNorm.SetActive(false);
+        objectLow.SetActive(true);
+        objectHigh.SetActive(false);
+    }
+
+    public void SetGravNormal()
+    {
+        ChangeGravity(-20f);
+        objectNorm.SetActive(true);
+        objectLow.SetActive(false);
+        objectHigh.SetActive(false);
+    }
+
+    public void SetGravHigh()
+    {
+        ChangeGravity(-30f);
+        objectNorm.SetActive(false);
+        objectLow.SetActive(false);
+        objectHigh.SetActive(true);
     }
 
     public void CanChangeGravityOnAndOff()

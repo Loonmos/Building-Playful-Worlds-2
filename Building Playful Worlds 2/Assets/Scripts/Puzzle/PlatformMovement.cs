@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PlatformMovement : MonoBehaviour
 {
+    private GameManager gameManager;
+
     public List<Transform> levelTransformsList = new List<Transform>(); // use this instead of separate transforms
     [SerializeField] private int levelIndex;
 
     private float speed = 2f;
     public bool continuousMovement;
     private bool startMoving;
+    public bool canMove;
 
     public GameObject player;
     public Transform playerPos;
@@ -19,6 +22,18 @@ public class PlatformMovement : MonoBehaviour
 
     void Start()
     {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
+        if (gameManager.templeCompleted == true)
+        {
+            canMove = true;
+            TurnStarOn();
+        }
+        else
+        {
+            canMove = false;
+        }
+
         continuousMovement = false;
         startMoving = false;
         levelIndex = 1;
@@ -30,6 +45,14 @@ public class PlatformMovement : MonoBehaviour
         if (startMoving == true)
         {
             MovePlatform();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player" && canMove == true)
+        {
+            TurnOnMovement();
         }
     }
 
@@ -47,9 +70,9 @@ public class PlatformMovement : MonoBehaviour
 
             if (continuousMovement == false)
             {
-                startMoving = false;
+                TurnOffMovement();
+                StartCoroutine(cooldownMovement()); // cooldown for canMove
                 player.transform.position = playerPos.position;
-                TurnStarOff();
             }
         }
     }
@@ -59,14 +82,37 @@ public class PlatformMovement : MonoBehaviour
         startMoving = true;
     }
 
+    public void TurnOffMovement()
+    {
+        startMoving = false;
+        TurnStarOff();
+    }
+
     public void TurnOnContinuous()
     {
         continuousMovement = true;
+    }
+
+    public void TurnStarOn()
+    {
+        starOn.SetActive(true);
+        starOff.SetActive(false);
     }
 
     public void TurnStarOff()
     {
         starOn.SetActive(false);
         starOff.SetActive(true);
+    }
+
+    IEnumerator cooldownMovement()
+    {
+        canMove = false;
+        TurnStarOff();
+
+        yield return new WaitForSeconds(3);
+
+        canMove = true;
+        TurnStarOn();
     }
 }

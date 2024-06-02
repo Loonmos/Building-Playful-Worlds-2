@@ -8,7 +8,7 @@ public class NewAbility : MonoBehaviour
 
     public GameObject particles;
 
-    private float particleTime = 5f;
+    private float particleTime = 3;
     private bool particlesActive;
     
     void Start()
@@ -47,9 +47,11 @@ public class NewAbility : MonoBehaviour
     {
         particlesActive = true;
         particles.SetActive(true);
+        Debug.Log("active");
 
-        yield return new WaitForSeconds(particleTime);
+        yield return new WaitForSeconds(3);
 
+        Debug.Log("inactive");
         particles.SetActive(false);
     }
 }
