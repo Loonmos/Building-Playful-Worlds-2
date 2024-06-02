@@ -53,18 +53,24 @@ public class LevelManager : MonoBehaviour
 
         if (altarsActive == true)
         {
-            TurnStarOn();
-            platformMove.canMove = true;
-
             if (levelPuzzle == true)
             {
                 PuzzleCompletion.Invoke();
             }
+            else // changed this recently, in case smt breaks
+            {
+                TurnStarOn();
+                platformMove.canMove = true;
+            }
 
-        } else
+        } 
+        else
         {
-            TurnStarOff();
-            platformMove.canMove = false;
+            if (levelPuzzle == false) // changed this recently, in case smt breaks
+            {
+                TurnStarOff();
+                platformMove.canMove = false;
+            } 
         }
     }
 
