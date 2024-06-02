@@ -10,6 +10,7 @@ TagManager:
   - SmallPickUp
   - BigPickUp
   - StarCrystal
+  - GameManager
   layers:
   - Default
   - TransparentFX

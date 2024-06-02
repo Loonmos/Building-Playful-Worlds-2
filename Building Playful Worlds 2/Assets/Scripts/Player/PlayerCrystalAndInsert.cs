@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerCrystalAndInsert : MonoBehaviour
 {
+    private GameManager gameManager;
     public PlayerInventory playerInventory;
     public StarCrystalActive starActive;
 
@@ -23,7 +24,13 @@ public class PlayerCrystalAndInsert : MonoBehaviour
     
     void Start()
     {
-        
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
+        if (gameManager.levelCompleted == true)
+        {
+            starCrystalGround.SetActive(false);
+            barrier.SetActive(false);
+        }
     }
 
     
@@ -49,8 +56,8 @@ public class PlayerCrystalAndInsert : MonoBehaviour
 
             if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHitHitHit, pickupDistance, starLayerMask))
             {
-                Destroy(starCrystalGround);
-                Destroy(barrier);
+                starCrystalGround.SetActive(false); 
+                barrier.SetActive(false);
                 starActive.TurnOn();
             }
         }

@@ -7,16 +7,26 @@ public class InsertCrystal : MonoBehaviour
 {
     public UnityEvent Inserted;
 
+    private GameManager gameManager;
     public PlayerInventory playerInventory;
 
     public GameObject crystal;
     private bool canInsert;
 
-    // Start is called before the first frame update
     void Start()
     {
-        crystal.SetActive(false);
-        canInsert = true;
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
+        if (gameManager.levelCompleted == true)
+        {
+            crystal.SetActive(true);
+            canInsert = false;
+        }
+        else
+        {
+            crystal.SetActive(false);
+            canInsert = true;
+        }
     }
 
     public void CrystalInserted()

@@ -9,7 +9,6 @@ public class EndofPuzzle : MonoBehaviour
 
     public GameObject endScreen;
 
-    private float endReturn = 10;
     private float endQuit = 60;
     
     void Start()
@@ -27,13 +26,6 @@ public class EndofPuzzle : MonoBehaviour
     public void StartTimer()
     {
         StartCoroutine(EndingQuit());
-    }
-
-    IEnumerator EndingReturn()
-    {
-        yield return new WaitForSeconds(endReturn);
-
-        endOfTemple.Invoke();
     }
 
     IEnumerator EndingQuit()

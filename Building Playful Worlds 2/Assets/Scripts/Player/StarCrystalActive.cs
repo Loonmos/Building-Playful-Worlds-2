@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class StarCrystalActive : MonoBehaviour
 {
+    private GameManager gameManager;
     public bool starActive;
     
     void Start()
     {
-        this.gameObject.SetActive(starActive);
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
+        if (gameManager.levelCompleted == true)
+        {
+            this.gameObject.SetActive(true);
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     public void TurnOn()

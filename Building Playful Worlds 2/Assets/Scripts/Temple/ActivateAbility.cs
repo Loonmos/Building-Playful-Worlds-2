@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ActivateAbility : MonoBehaviour
 {
+    private GameManager gameManager;
+
     public GameObject player;
     public PlayerAbility playerAbility;
+    public OpenTemple openDoors;
     
     void Start()
     {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
         player = GameObject.FindWithTag("Player");
         playerAbility = player.GetComponent<PlayerAbility>();
     }
@@ -18,6 +23,8 @@ public class ActivateAbility : MonoBehaviour
         if (other.tag == "Player")
         {
             playerAbility.TurnOnAbility();
+            gameManager.templeCompleted = true;
+            openDoors.OpenDoors();
         }
     }
 }

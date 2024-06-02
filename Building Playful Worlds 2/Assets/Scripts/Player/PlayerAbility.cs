@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAbility : MonoBehaviour
 {
+    private GameManager gameManager;
     public CharacterController charController;
     public PlayerMovement playerMovement;
 
@@ -24,6 +25,13 @@ public class PlayerAbility : MonoBehaviour
     
     void Start()
     {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
+        if (gameManager.abilityGot == true)
+        {
+            canUse = true;
+        }
+
         charController.enabled = true;
         playerMovement.enabled = true;
 
@@ -81,6 +89,7 @@ public class PlayerAbility : MonoBehaviour
 
     public void TurnOnAbility()
     {
+        gameManager.abilityGot = true;
         canUse = true;
     }
 }

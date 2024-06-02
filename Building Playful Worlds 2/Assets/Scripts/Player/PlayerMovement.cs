@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-            velocityText.SetText("Velocity : " + velocity.y);
+            //velocityText.SetText("Velocity : " + velocity.y);
     }
 
     void CheckGround()
