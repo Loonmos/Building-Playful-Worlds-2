@@ -7,11 +7,14 @@ ScriptsOnlyBuild:
     - CheckPickUp
     - ColliderEvent
     - CrystalGrabbable
+    - CrystalManager
     - DontDestoyOnLoad
     - EndofPuzzle
+    - GameManager
     - GravityText
     - InsertCrystal
     - LevelManager
+    - LoadGame
     - MouseLook
     - NewAbility
     - ObjectGrabbable
@@ -275,17 +278,17 @@ ScriptsOnlyBuild:
     fullTypeName: Tutorial
     methodName: MessagePopUp
   - assembly: Assembly-CSharp
+    fullTypeName: PlatformMovement
+    methodName: MovePlatform
+  - assembly: Assembly-CSharp
+    fullTypeName: OpenTemple
+    methodName: OpenDoors
+  - assembly: Assembly-CSharp
     fullTypeName: NewAbility
     methodName: DestroyObject
   - assembly: Assembly-CSharp
-    fullTypeName: NewAbility
-    methodName: ActivateParticles
-  - assembly: Assembly-CSharp
-    fullTypeName: EndofPuzzle
-    methodName: StartTimer
-  - assembly: Assembly-CSharp
-    fullTypeName: ChangeScenes
-    methodName: ChangeScene
+    fullTypeName: ColliderEvent
+    methodName: SetInactive
   - assembly: Assembly-CSharp
     fullTypeName: PlayerAbility
     methodName: ResetUses
@@ -295,6 +298,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: CheckAltars
+  - assembly: Assembly-CSharp
+    fullTypeName: ColliderEvent
+    methodName: SaveGame
+  - assembly: Assembly-CSharp
+    fullTypeName: ChangeScenes
+    methodName: ChangeScene
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: CheckAltars
@@ -356,29 +365,8 @@ ScriptsOnlyBuild:
     fullTypeName: AltarActivation
     methodName: RemoveFromCount
   - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: AddToCount
-  - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: AddToCount
-  - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: AddToCount
-  - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: AddToCount
-  - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: RemoveFromCount
-  - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: RemoveFromCount
-  - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: RemoveFromCount
-  - assembly: Assembly-CSharp
-    fullTypeName: AltarActivation
-    methodName: RemoveFromCount
+    fullTypeName: PlayerAbility
+    methodName: ResetUses
   - assembly: Assembly-CSharp
     fullTypeName: AltarActivation
     methodName: AddToCount
@@ -403,6 +391,33 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: AltarActivation
     methodName: RemoveFromCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: AddToCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: AddToCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: AddToCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: AddToCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: RemoveFromCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: RemoveFromCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: RemoveFromCount
+  - assembly: Assembly-CSharp
+    fullTypeName: AltarActivation
+    methodName: RemoveFromCount
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: SaveGameOutside
   - assembly: Assembly-CSharp
     fullTypeName: ChangeScenes
     methodName: ChangeScene
@@ -424,9 +439,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: CheckAltars
-  - assembly: Assembly-CSharp
-    fullTypeName: PlayerAbility
-    methodName: ResetUses
   - assembly: Assembly-CSharp
     fullTypeName: OpenTemple
     methodName: CheckCrystals
@@ -519,39 +531,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5276}
     - Class: 114
-      Script: {instanceID: 5322}
+      Script: {instanceID: 5324}
     - Class: 114
-      Script: {instanceID: 5360}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 5588}
+      Script: {instanceID: 5424}
     - Class: 114
-      Script: {instanceID: 5604}
+      Script: {instanceID: 5458}
     - Class: 114
-      Script: {instanceID: 5836}
+      Script: {instanceID: 5594}
     - Class: 114
-      Script: {instanceID: 5918}
+      Script: {instanceID: 5610}
     - Class: 114
-      Script: {instanceID: 6156}
+      Script: {instanceID: 5842}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 5924}
     - Class: 114
-      Script: {instanceID: 6380}
+      Script: {instanceID: 6162}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 6204}
     - Class: 114
-      Script: {instanceID: 6716}
+      Script: {instanceID: 6386}
     - Class: 114
-      Script: {instanceID: 6848}
+      Script: {instanceID: 6390}
     - Class: 114
-      Script: {instanceID: 6854}
+      Script: {instanceID: 6642}
     - Class: 114
-      Script: {instanceID: 7332}
+      Script: {instanceID: 6724}
     - Class: 114
-      Script: {instanceID: 7818}
+      Script: {instanceID: 6856}
     - Class: 114
-      Script: {instanceID: 8132}
+      Script: {instanceID: 6862}
     - Class: 114
-      Script: {instanceID: 173414}
+      Script: {instanceID: 7340}
+    - Class: 114
+      Script: {instanceID: 7416}
+    - Class: 114
+      Script: {instanceID: 7828}
+    - Class: 114
+      Script: {instanceID: 8142}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -613,6 +631,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 72
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -622,6 +642,8 @@ ScriptsOnlyBuild:
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -658,6 +680,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4188}
     - Class: 114
+      Script: {instanceID: 4204}
+    - Class: 114
       Script: {instanceID: 4986}
     - Class: 114
       Script: {instanceID: 5058}
@@ -666,45 +690,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5276}
     - Class: 114
-      Script: {instanceID: 5322}
+      Script: {instanceID: 5324}
     - Class: 114
-      Script: {instanceID: 5360}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 5588}
+      Script: {instanceID: 5458}
     - Class: 114
-      Script: {instanceID: 5604}
+      Script: {instanceID: 5594}
     - Class: 114
-      Script: {instanceID: 5836}
+      Script: {instanceID: 5610}
     - Class: 114
-      Script: {instanceID: 5918}
+      Script: {instanceID: 5842}
     - Class: 114
-      Script: {instanceID: 6078}
+      Script: {instanceID: 5924}
     - Class: 114
-      Script: {instanceID: 6156}
+      Script: {instanceID: 6084}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 6162}
     - Class: 114
-      Script: {instanceID: 6360}
+      Script: {instanceID: 6204}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 6366}
     - Class: 114
-      Script: {instanceID: 6716}
+      Script: {instanceID: 6390}
     - Class: 114
-      Script: {instanceID: 7034}
+      Script: {instanceID: 6724}
     - Class: 114
-      Script: {instanceID: 7332}
+      Script: {instanceID: 6862}
     - Class: 114
-      Script: {instanceID: 7356}
+      Script: {instanceID: 7042}
     - Class: 114
-      Script: {instanceID: 7818}
+      Script: {instanceID: 7340}
     - Class: 114
-      Script: {instanceID: 7878}
+      Script: {instanceID: 7364}
     - Class: 114
-      Script: {instanceID: 8132}
+      Script: {instanceID: 7416}
     - Class: 114
-      Script: {instanceID: 8610}
+      Script: {instanceID: 7828}
     - Class: 114
-      Script: {instanceID: 173414}
+      Script: {instanceID: 7888}
+    - Class: 114
+      Script: {instanceID: 8142}
+    - Class: 114
+      Script: {instanceID: 8622}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -785,21 +813,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5276}
     - Class: 114
-      Script: {instanceID: 5360}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 5588}
+      Script: {instanceID: 5594}
     - Class: 114
-      Script: {instanceID: 5604}
+      Script: {instanceID: 5610}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 6204}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 6390}
     - Class: 114
-      Script: {instanceID: 6716}
+      Script: {instanceID: 6724}
     - Class: 114
-      Script: {instanceID: 7818}
+      Script: {instanceID: 7828}
     - Class: 114
-      Script: {instanceID: 8132}
+      Script: {instanceID: 8142}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1495,7 +1523,7 @@ ScriptsOnlyBuild:
     className: ScreenSpaceReflections
   - hash:
       serializedVersion: 2
-      Hash: 9c6810840d16c503a0861f9a12e98b86
+      Hash: 7b30649febccb6b811bdab8d997db3b7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -1561,6 +1589,12 @@ ScriptsOnlyBuild:
     className: PostProcessResources
   - hash:
       serializedVersion: 2
+      Hash: cc70cda086f1681f5c50542a95fc962c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThirdPersonMovement
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1573,7 +1607,7 @@ ScriptsOnlyBuild:
     className: AmbientOcclusion
   - hash:
       serializedVersion: 2
-      Hash: 8cd1cc8aa8c09d91b04ff7a25ed62aaf
+      Hash: 3983f6c9c2c44613bc87336ce31c6f89
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerAbility
@@ -1613,6 +1647,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 70b29ba1e828bb394e7d35c7a713147f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CrystalManager
+  - hash:
+      serializedVersion: 2
+      Hash: 870ac055ccbd2f2fae927d3fd0979608
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StarCrystalActive
   - hash:
       serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
@@ -1687,7 +1733,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 535f3990371e2baa5d740e90567f0b3a
+      Hash: 2df877964807957512e0f0e1798af21a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerPickUpDrop
@@ -1705,7 +1751,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: 0d55262685dc920234f066bfed9dbdbc
+      Hash: 5026b62e9a3da771154642354ec19f05
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelManager
@@ -1789,7 +1835,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: ebea53a852866c8070613945b478db8b
+      Hash: 67c5c05b87229932532130e62cfab317
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlatformMovement
@@ -1811,6 +1857,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4ad648def3aac5e0a98f2ee30952170d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816
@@ -1969,6 +2021,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerDownMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadGame
+  - hash:
+      serializedVersion: 2
       Hash: 7c792393fb82488bd20139dcc5ba26d8
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -2059,7 +2117,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: e9f6987804fd85ebdfe35b26c84dbb01
+      Hash: dffa749fdd67104ace44cb4e2a974aa0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ActivateAbility
@@ -2125,6 +2183,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugThings
+  - hash:
+      serializedVersion: 2
       Hash: 66a76d307baa3e8eb65d877c961f1b43
     assemblyName: Cinemachine.dll
     namespaceName: 
@@ -2177,16 +2241,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 870ac055ccbd2f2fae927d3fd0979608
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StarCrystalActive
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level1Puzzle.unity
   - Assets/Scenes/Level1.unity
   playerPath: C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version
-    2.1/Star Explorer.exe
+    2.2/Star Explorer.exe
