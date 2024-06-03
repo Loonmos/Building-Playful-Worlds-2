@@ -2015,7 +2015,7 @@ Transform:
   - {fileID: 1210265465}
   - {fileID: 141916547}
   m_Father: {fileID: 707199270}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302208430
 GameObject:
@@ -3920,7 +3920,7 @@ Transform:
   - {fileID: 1279066549}
   - {fileID: 477817866}
   m_Father: {fileID: 707199270}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &538591675
 GameObject:
@@ -4949,6 +4949,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1757296265}
+  - {fileID: 1431111090}
   - {fileID: 1316052970}
   - {fileID: 285042895}
   - {fileID: 531407153}
@@ -5431,9 +5432,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1316052969}
-        m_TargetAssemblyTypeName: NewAbility, Assembly-CSharp
-        m_MethodName: DestroyObject
+      - m_Target: {fileID: 788219522}
+        m_TargetAssemblyTypeName: ColliderEvent, Assembly-CSharp
+        m_MethodName: SetInactive
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5443,9 +5444,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 788219522}
-        m_TargetAssemblyTypeName: ColliderEvent, Assembly-CSharp
-        m_MethodName: SetInactive
+      - m_Target: {fileID: 1316052969}
+        m_TargetAssemblyTypeName: NewAbility, Assembly-CSharp
+        m_MethodName: DestroyObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9667,9 +9668,8 @@ Transform:
   m_Children:
   - {fileID: 1800982753}
   - {fileID: 788219518}
-  - {fileID: 1431111090}
   m_Father: {fileID: 707199270}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1317257082
 PrefabInstance:
@@ -10400,7 +10400,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1316052970}
+    m_TransformParent: {fileID: 707199270}
     m_Modifications:
     - target: {fileID: 100000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_Name
@@ -10408,7 +10408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_LocalScale.y
@@ -10420,15 +10420,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10436,7 +10436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d32078c4f23434270b4ce778bb886ac9, type: 3}
       propertyPath: m_LocalRotation.z
