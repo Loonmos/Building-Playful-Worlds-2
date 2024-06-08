@@ -51,7 +51,7 @@ public class AltarActivation : MonoBehaviour
 
     public void ActivateCrystal() // if value = smt activate lightcrystal
     {
-        if (valueCount == crystalValue)
+        if (valueCount >= crystalValue)
         {
             CrystalOn();
             activateSound.Play();
@@ -69,6 +69,14 @@ public class AltarActivation : MonoBehaviour
     {
         valueCount = valueCount + addition;
         
+        ActivatePath();
+        ActivateCrystal();
+    }
+
+    public void ResetCount()
+    {
+        valueCount = 0;
+
         ActivatePath();
         ActivateCrystal();
     }

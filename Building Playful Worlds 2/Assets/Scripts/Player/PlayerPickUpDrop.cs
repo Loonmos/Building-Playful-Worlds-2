@@ -36,6 +36,7 @@ public class PlayerPickUpDrop : MonoBehaviour
                         playerMove.canChangeGravSelf = false;
                         //thirdMove.canChangeGravSelf = false;
                         objectGrabbable.Grab(grabPoint); // object is picked up
+                        objectGrabbable.pickedUp = true;
                         isHoldingSmt = true; 
                     }
                 }
@@ -44,16 +45,17 @@ public class PlayerPickUpDrop : MonoBehaviour
             {
                 playerMove.canChangeGravSelf = true;
                 //thirdMove.canChangeGravSelf = true;
+                objectGrabbable.pickedUp = false;
                 objectGrabbable.Drop(); // object is dropped
                 isHoldingSmt = false;
                 objectGrabbable = null;
             }
         }
 
-        if (isHoldingSmt == true)
-        {
-            ChangeObjectGrav();
-        }
+        //if (isHoldingSmt == true)
+        //{
+        //    ChangeObjectGrav();
+        //}
     }
 
     void ChangeObjectGrav()

@@ -20,7 +20,11 @@ public class ObjectGrabbable : MonoBehaviour
     private float groundDistance = 0.4f;
     public LayerMask groundMask;
 
-    private bool canChangeGravity;
+    [SerializeField] private bool canChangeGravity;
+    [SerializeField] private float scroll = 0;
+    public float scrollValue;
+
+    public bool pickedUp;
 
     private void Start()
     {
@@ -31,6 +35,7 @@ public class ObjectGrabbable : MonoBehaviour
         objectHigh.SetActive(false);
 
         canChangeGravity = true;
+        pickedUp = false;
     }
 
     private void Update()
@@ -45,6 +50,12 @@ public class ObjectGrabbable : MonoBehaviour
             Ground();
             ApplyGravity(gravity);
         }
+
+        if (pickedUp == true && canChangeGravity == true)
+        {
+            ChangeObjGravity();
+        }
+
     }
 
     public void Grab(Transform objectGrabPoint)
@@ -76,33 +87,60 @@ public class ObjectGrabbable : MonoBehaviour
 
     public void ChangeObjGravity()
     {
-        if (canChangeGravity == true)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            //if (Input.GetButtonDown("LowG"))
-            //{
-            //    ChangeGravity(-10f);
-            //    objectNorm.SetActive(false);
-            //    objectLow.SetActive(true);
-            //    objectHigh.SetActive(false);
-            //}
-
-            //if (Input.GetButtonDown("NormalG"))
-            //{
-            //    ChangeGravity(-20f);
-            //    objectNorm.SetActive(true);
-            //    objectLow.SetActive(false);
-            //    objectHigh.SetActive(false);
-            //}
-
-            //if (Input.GetButtonDown("HighG"))
-            //{
-            //    ChangeGravity(-30f);
-            //    objectNorm.SetActive(false);
-            //    objectLow.SetActive(false);
-            //    objectHigh.SetActive(true);
-            //}
+            Debug.Log("getting input");
+            scroll += scrollValue;
+            // change starcrystal pos
         }
-        
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            Debug.Log("getting input");
+            scroll -= scrollValue;
+            // change starcrystal pos
+        }
+
+        if (scroll >= 1)
+        {
+            scroll = 1;
+            SetGravHigh();
+        }
+
+        if (scroll == 0)
+        {
+            SetGravNormal();
+        }
+
+        if (scroll <= -1)
+        {
+            scroll = -1;
+            SetGravLow();
+        }
+
+        //if (Input.GetButtonDown("LowG"))
+        //{
+        //    ChangeGravity(-10f);
+        //    objectNorm.SetActive(false);
+        //    objectLow.SetActive(true);
+        //    objectHigh.SetActive(false);
+        //}
+
+        //if (Input.GetButtonDown("NormalG"))
+        //{
+        //    ChangeGravity(-20f);
+        //    objectNorm.SetActive(true);
+        //    objectLow.SetActive(false);
+        //    objectHigh.SetActive(false);
+        //}
+
+        //if (Input.GetButtonDown("HighG"))
+        //{
+        //    ChangeGravity(-30f);
+        //    objectNorm.SetActive(false);
+        //    objectLow.SetActive(false);
+        //    objectHigh.SetActive(true);
+        //}
     }
 
     public void SetGravLow()

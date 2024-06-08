@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     public GravityText gravText;
+    public StarCrystalActive starCrystal;
 
     [SerializeField] private float speed = 12f;
     
@@ -32,9 +33,9 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask shroomMask;
     bool isShroomed;
 
-    public Transform starCrystal;
-    public Transform starRegular;
-    public Transform starCastSelf;
+    //public Transform starCrystal;
+    //public Transform starRegular;
+    //public Transform starCastSelf;
 
     private bool useAbility;
 
@@ -58,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
         ApplyGravity(gravity);
 
-        if (canChangeGravSelf == true)
+        if (useAbility == true && canChangeGravSelf == true)
         {
             ChangeGravSelf();
         }
@@ -157,13 +158,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             scroll += scrollValue;
-            // change starcrystal pos
+            starCrystal.ChangeGrav();
         }
-
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             scroll -= scrollValue;
-            // change starcrystal pos
+            starCrystal.ChangeGrav();
         }
 
         if (scroll >= 1)
@@ -171,12 +171,14 @@ public class PlayerMovement : MonoBehaviour
             scroll = 1;
             ChangeGravity(-30f, 6f, 1f);
             gravText.ChangeText("high");
+            //starCrystal.Anim();
         }
 
         if (scroll == 0)
         {
             ChangeGravity(-20f, 12f, 3f);
             gravText.ChangeText("normal");
+            //starCrystal.Anim();
         }
 
         if (scroll <= -1)
@@ -184,6 +186,7 @@ public class PlayerMovement : MonoBehaviour
             scroll = -1;
             ChangeGravity(-10f, 18f, 5f);
             gravText.ChangeText("low");
+            //starCrystal.Anim();
         }
     }
 

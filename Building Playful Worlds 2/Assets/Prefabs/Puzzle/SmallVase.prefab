@@ -108,6 +108,10 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 128
+  canChangeGravity: 0
+  scroll: 0
+  scrollValue: 0.5
+  pickedUp: 0
 --- !u!65 &6587671558087655437
 BoxCollider:
   m_ObjectHideFlags: 0

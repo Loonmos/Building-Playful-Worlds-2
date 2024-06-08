@@ -263,6 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 3801338794269415927}
   gravText: {fileID: 0}
+  starCrystal: {fileID: 418375351175961028}
   speed: 12
   scroll: 0
   scrollValue: 0.5
@@ -279,9 +280,6 @@ MonoBehaviour:
   shroomMask:
     serializedVersion: 2
     m_Bits: 512
-  starCrystal: {fileID: 3374399390714834104}
-  starRegular: {fileID: 3801338793729052430}
-  starCastSelf: {fileID: 3801338794378767153}
   velocityText: {fileID: 0}
   TouchGround:
     m_PersistentCalls:
@@ -311,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMove: {fileID: 3801338794269415921}
+  thirdMove: {fileID: 0}
   playerCameraTransform: {fileID: 3801338794466000985}
   pickupLayerMask:
     serializedVersion: 2
@@ -394,6 +393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charController: {fileID: 3801338794269415927}
   playerMovement: {fileID: 3801338794269415921}
+  thirdMove: {fileID: 0}
   starCrystal: {fileID: 3374399390714834104}
   crystalHoldPoint: {fileID: 1348705090964503611}
   starRegular: {fileID: 3801338793729052430}
@@ -497,7 +497,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -796,6 +796,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starActive: 0
+  changeSelfPos: {fileID: 3801338794378767158}
+  normalPos: {fileID: 3801338793729052431}
+  lerpSpeed: 5
 --- !u!1001 &6346224633845368498
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,11 @@ public class StarCrystalActive : MonoBehaviour
 {
     private GameManager gameManager;
     public bool starActive;
+    public Animator anim;
+
+    public GameObject changeSelfPos;
+    public GameObject normalPos;
+    public int lerpSpeed;
     
     void Start()
     {
@@ -19,6 +24,8 @@ public class StarCrystalActive : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+
+        transform.position = normalPos.transform.position;
     }
 
     public void TurnOn()
@@ -29,5 +36,30 @@ public class StarCrystalActive : MonoBehaviour
     public void TurnOff()
     {
         this.gameObject.SetActive(false);
+    }
+
+    public void ChangeGrav()
+    {
+        //Vector3 newPos = Vector3.Lerp(transform.position, changeSelfPos.transform.position, Time.deltaTime * lerpSpeed);
+        transform.position = changeSelfPos.transform.position;
+    }
+
+    public void SetNormal()
+    {
+        transform.position = normalPos.transform.position;
+    }
+
+    public void Anim()
+    {
+        StartCoroutine(ChangeAnimation());
+    }
+
+    public IEnumerator ChangeAnimation()
+    {
+        anim.SetBool("Change", true);
+
+        yield return new WaitForSeconds(0.5f);
+
+        anim.SetBool("Change", false);
     }
 }
