@@ -41,12 +41,12 @@ public class StarCrystalActive : MonoBehaviour
     public void ChangeGrav()
     {
         //Vector3 newPos = Vector3.Lerp(transform.position, changeSelfPos.transform.position, Time.deltaTime * lerpSpeed);
-        transform.position = changeSelfPos.transform.position;
+        //transform.position = changeSelfPos.transform.position;
     }
 
     public void SetNormal()
     {
-        transform.position = normalPos.transform.position;
+        //transform.position = normalPos.transform.position;
     }
 
     public void Anim()
@@ -56,10 +56,10 @@ public class StarCrystalActive : MonoBehaviour
 
     public IEnumerator ChangeAnimation()
     {
-        anim.SetBool("Change", true);
+        //anim.SetBool("Change", true);
 
         yield return new WaitForSeconds(0.5f);
 
-        anim.SetBool("Change", false);
+        //anim.SetBool("Change", false);
     }
 }

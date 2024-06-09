@@ -8,6 +8,7 @@ public class OpenTemple : MonoBehaviour
     private GameManager gameManager;
     public List<GameObject> crystalList = new List<GameObject>();
     [SerializeField] private bool crystalsActive;
+    public AudioSource sound;
 
     public Animator anim1;
     public Animator anim2;
@@ -35,6 +36,7 @@ public class OpenTemple : MonoBehaviour
     {
         anim1.SetBool("Open", true);
         anim2.SetBool("Open", true);
+        sound.Play();
     }
 
     public void CheckCrystals()

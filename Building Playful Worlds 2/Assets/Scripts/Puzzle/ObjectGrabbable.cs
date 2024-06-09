@@ -26,6 +26,12 @@ public class ObjectGrabbable : MonoBehaviour
 
     public bool pickedUp;
 
+    public AudioSource low;
+    public AudioSource normal;
+    public AudioSource high;
+
+    private bool changingGrav;
+
     private void Start()
     {
         gravity = -20f;
@@ -91,6 +97,7 @@ public class ObjectGrabbable : MonoBehaviour
         {
             Debug.Log("getting input");
             scroll += scrollValue;
+            changingGrav = true;
             // change starcrystal pos
         }
 
@@ -98,24 +105,34 @@ public class ObjectGrabbable : MonoBehaviour
         {
             Debug.Log("getting input");
             scroll -= scrollValue;
+            changingGrav = true;
             // change starcrystal pos
         }
 
-        if (scroll >= 1)
+        if (scroll >= 1 && changingGrav == true)
         {
             scroll = 1;
             SetGravHigh();
+            low.Play();
+
+            changingGrav = false;
         }
 
-        if (scroll == 0)
+        if (scroll == 0 && changingGrav == true)
         {
             SetGravNormal();
+            normal.Play();
+
+            changingGrav = false;
         }
 
-        if (scroll <= -1)
+        if (scroll <= -1 && changingGrav == true)
         {
             scroll = -1;
             SetGravLow();
+            high.Play();
+
+            changingGrav = false;
         }
 
         //if (Input.GetButtonDown("LowG"))

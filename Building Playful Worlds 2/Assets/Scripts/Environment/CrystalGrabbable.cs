@@ -14,6 +14,6 @@ public class CrystalGrabbable : MonoBehaviour
     public void PickUpCrystal()
     {
         playerInventory.AddCrystal();
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

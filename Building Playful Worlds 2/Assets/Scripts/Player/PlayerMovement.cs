@@ -9,16 +9,18 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public GravityText gravText;
     public StarCrystalActive starCrystal;
+    public PlayerAudio playerAudio;
 
     [SerializeField] private float speed = 12f;
     
     [SerializeField] private float scroll = 0;
     public float scrollValue;
     public bool canChangeGravSelf;
+    [SerializeField] private bool changingGrav;
     
     Vector3 velocity;
     public float gravity = -19.62f;
-    
+
     public float jumpHeight = 3f;
     public int jumpUses = 1;
     public float jumpResetCooldown;
@@ -33,15 +35,12 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask shroomMask;
     bool isShroomed;
 
-    //public Transform starCrystal;
-    //public Transform starRegular;
-    //public Transform starCastSelf;
-
     private bool useAbility;
 
-    public TextMeshProUGUI velocityText;
-
     public UnityEvent TouchGround;
+
+    public GameObject lowScreen;
+    public GameObject highScreen;
 
     void Start()
     {
@@ -49,6 +48,9 @@ public class PlayerMovement : MonoBehaviour
         useAbility = true;
         canReset = true;
         canChangeGravSelf = true;
+
+        lowScreen.SetActive(false);
+        highScreen.SetActive(false);
     }
 
     void Update()
@@ -65,9 +67,9 @@ public class PlayerMovement : MonoBehaviour
         }
         
         if (Input.GetButtonDown("Jump") && jumpUses >= 1)
-            {
-                Jump(gravity);
-            }
+        {
+            Jump(gravity);
+        }
 
         //if (Input.GetButton("FocusSelf"))
         //{
@@ -77,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
         //        FocusSelf();
         //    }
         //}
-        
+
         //if (Input.GetButtonUp("FocusSelf"))
         //{
         //    starCrystal.position = starRegular.position;
@@ -100,6 +102,12 @@ public class PlayerMovement : MonoBehaviour
                 jumpUses = 1;
             }
             TouchGround.Invoke();
+
+            playerAudio.onGround = true;
+        }
+        else
+        {
+            playerAudio.onGround = false;
         }
     }
 
@@ -110,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
         if (isShroomed)
         {
             velocity.y = -velocity.y;
+            playerAudio.bounce.Play();
         }
     }
 
@@ -123,10 +132,23 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButton("LeftShift")) // run
         {
             controller.Move(move * speed * 1.5f * Time.deltaTime);
+            playerAudio.walking = false;
+            playerAudio.running = true;
         }
         else
         {
             controller.Move(move * speed * Time.deltaTime);
+            playerAudio.running = false;
+            playerAudio.walking = true;
+        }
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            playerAudio.moving = true;
+        }
+        else
+        {
+            playerAudio.moving = false;
         }
     }
 
@@ -159,33 +181,56 @@ public class PlayerMovement : MonoBehaviour
         {
             scroll += scrollValue;
             starCrystal.ChangeGrav();
+            changingGrav = true;
         }
         else if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             scroll -= scrollValue;
             starCrystal.ChangeGrav();
+            changingGrav = true;
         }
 
-        if (scroll >= 1)
+        if (scroll >= 1 && changingGrav == true)
         {
             scroll = 1;
             ChangeGravity(-30f, 6f, 1f);
-            gravText.ChangeText("high");
+            //gravText.ChangeText("high");
+
+            playerAudio.highGrav.Play();
+            lowScreen.SetActive(false);
+            highScreen.SetActive(true);
+
+            changingGrav = false;
+
             //starCrystal.Anim();
         }
 
-        if (scroll == 0)
+        if (scroll == 0 && changingGrav == true)
         {
             ChangeGravity(-20f, 12f, 3f);
-            gravText.ChangeText("normal");
+            //gravText.ChangeText("normal");
+
+            playerAudio.normalGrav.Play();
+            lowScreen.SetActive(false);
+            highScreen.SetActive(false);
+
+            changingGrav = false;
+
             //starCrystal.Anim();
         }
 
-        if (scroll <= -1)
+        if (scroll <= -1 && changingGrav == true)
         {
             scroll = -1;
             ChangeGravity(-10f, 18f, 5f);
-            gravText.ChangeText("low");
+            //gravText.ChangeText("low");
+
+            playerAudio.lowGrav.Play();
+            lowScreen.SetActive(true);
+            highScreen.SetActive(false);
+
+            changingGrav = false;
+
             //starCrystal.Anim();
         }
     }

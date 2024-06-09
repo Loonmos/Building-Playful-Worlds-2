@@ -9,6 +9,7 @@ public class ActivateAbility : MonoBehaviour
 
     public GameObject player;
     public PlayerAbility playerAbility;
+    public PlayerAudio playerAudio;
     public OpenTemple openDoors;
     
     void Start()
@@ -25,6 +26,7 @@ public class ActivateAbility : MonoBehaviour
         {
             playerAbility.TurnOnAbility();
             gameManager.templeCompleted = true;
+            playerAudio.getAbility.Play();
             openDoors.OpenDoors();
         }
     }

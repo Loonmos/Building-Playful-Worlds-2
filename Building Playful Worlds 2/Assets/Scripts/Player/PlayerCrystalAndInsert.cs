@@ -7,6 +7,7 @@ public class PlayerCrystalAndInsert : MonoBehaviour
     private GameManager gameManager;
     public PlayerInventory playerInventory;
     public StarCrystalActive starActive;
+    public PlayerAudio playerAudio;
 
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private LayerMask crystalLayerMask;
@@ -43,6 +44,7 @@ public class PlayerCrystalAndInsert : MonoBehaviour
                 if (raycastHit.transform.TryGetComponent(out crystalGrabbable)) // if the raycast hits a crystal with the script
                 {
                     crystalGrabbable.PickUpCrystal();
+                    playerAudio.pickUpCrystal.Play();
                 }
             }
 
@@ -51,6 +53,7 @@ public class PlayerCrystalAndInsert : MonoBehaviour
                 if (raycastHitHit.transform.TryGetComponent(out insertCrystal)) // if the raycast hits the insert place with the script
                 {
                     insertCrystal.CrystalInserted();
+                    playerAudio.insert.Play();
                 }
             }
 
@@ -58,6 +61,10 @@ public class PlayerCrystalAndInsert : MonoBehaviour
             {
                 starCrystalGround.SetActive(false); 
                 barrier.SetActive(false);
+
+                playerAudio.pickUpCrystal.Play();
+                playerAudio.barrier.Play();
+
                 starActive.TurnOn();
             }
         }

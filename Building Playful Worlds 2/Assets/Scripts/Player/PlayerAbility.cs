@@ -8,6 +8,7 @@ public class PlayerAbility : MonoBehaviour
     public CharacterController charController;
     public PlayerMovement playerMovement;
     public ThirdPersonMovement thirdMove;
+    public PlayerAudio playerAudio;
 
     public Transform starCrystal;
     public Transform crystalHoldPoint;
@@ -45,7 +46,12 @@ public class PlayerAbility : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButton("Ability") && canUse == true && uses >= 1 && !Input.GetButton("FocusSelf") && !Input.GetButton("FocusOther"))
+        if (Input.GetButtonDown("Ability") && canUse == true && uses >= 1)
+        {
+            playerAudio.abilityStar.Play();
+        }
+
+        if (Input.GetButton("Ability") && canUse == true && uses >= 1)
         {
             positioning = true;
 
@@ -58,6 +64,9 @@ public class PlayerAbility : MonoBehaviour
         if (Input.GetButtonUp("Ability") && positioning == true)
         {
             positioning = false;
+
+            playerAudio.abilityStar.Stop();
+            playerAudio.abilityPlayer.Play();
 
             teleporting = true;
             uses = 0;

@@ -7,6 +7,8 @@ public class StatueStates : MonoBehaviour
     private GameManager gameManager;
     public Animator anim;
 
+    public AudioSource move;
+
     private void Start()
     {
         gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
@@ -24,5 +26,6 @@ public class StatueStates : MonoBehaviour
     public void StatueActivation()
     {
         anim.SetBool("Activated", true);
+        move.Play();
     }
 }

@@ -6,6 +6,7 @@ public class PlayerPickUpDrop : MonoBehaviour
 {
     public PlayerMovement playerMove;
     public ThirdPersonMovement thirdMove;
+    public PlayerAudio playerAudio;
 
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private LayerMask pickupLayerMask;
@@ -37,7 +38,9 @@ public class PlayerPickUpDrop : MonoBehaviour
                         //thirdMove.canChangeGravSelf = false;
                         objectGrabbable.Grab(grabPoint); // object is picked up
                         objectGrabbable.pickedUp = true;
-                        isHoldingSmt = true; 
+                        isHoldingSmt = true;
+
+                        playerAudio.pickUpVase.Play();
                     }
                 }
             }
@@ -49,6 +52,9 @@ public class PlayerPickUpDrop : MonoBehaviour
                 objectGrabbable.Drop(); // object is dropped
                 isHoldingSmt = false;
                 objectGrabbable = null;
+                
+                playerAudio.pickUpVase.Stop();
+                playerAudio.pickUpVase.Play();
             }
         }
 
