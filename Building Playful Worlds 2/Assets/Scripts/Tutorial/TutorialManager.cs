@@ -5,7 +5,7 @@ using TMPro;
 
 public class TutorialManager : MonoBehaviour
 {
-    // I am aware that this is a mess, but it works (I hope)
+    public GameManager gameManager;
 
     public GameObject tutorialScreen;
     public TextMeshProUGUI tutText;
@@ -18,7 +18,10 @@ public class TutorialManager : MonoBehaviour
     
     void Start()
     {
-        
+        if (gameManager.levelCompleted == true)
+        {
+            state = State.End;
+        }
     }
 
     
@@ -50,7 +53,7 @@ public class TutorialManager : MonoBehaviour
 
     private void Exposition2()
     {
-        ChangeTutText("What Happened");
+        ChangeTutText("What Happened?");
 
         ClickToContinue(State.WalkSprint);
     }

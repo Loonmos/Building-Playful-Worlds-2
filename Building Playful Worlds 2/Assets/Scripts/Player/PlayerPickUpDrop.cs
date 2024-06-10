@@ -7,6 +7,7 @@ public class PlayerPickUpDrop : MonoBehaviour
     public PlayerMovement playerMove;
     public ThirdPersonMovement thirdMove;
     public PlayerAudio playerAudio;
+    public StarCrystalActive starCrystal;
 
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private LayerMask pickupLayerMask;
@@ -41,6 +42,7 @@ public class PlayerPickUpDrop : MonoBehaviour
                         isHoldingSmt = true;
 
                         playerAudio.pickUpVase.Play();
+                        starCrystal.ChangeGrav();
                     }
                 }
             }
@@ -55,6 +57,7 @@ public class PlayerPickUpDrop : MonoBehaviour
                 
                 playerAudio.pickUpVase.Stop();
                 playerAudio.pickUpVase.Play();
+                starCrystal.SetNormal();
             }
         }
 

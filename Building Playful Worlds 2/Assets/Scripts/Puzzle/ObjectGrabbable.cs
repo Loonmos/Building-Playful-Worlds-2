@@ -98,7 +98,6 @@ public class ObjectGrabbable : MonoBehaviour
             Debug.Log("getting input");
             scroll += scrollValue;
             changingGrav = true;
-            // change starcrystal pos
         }
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
@@ -106,7 +105,6 @@ public class ObjectGrabbable : MonoBehaviour
             Debug.Log("getting input");
             scroll -= scrollValue;
             changingGrav = true;
-            // change starcrystal pos
         }
 
         if (scroll >= 1 && changingGrav == true)

@@ -41,12 +41,13 @@ public class StarCrystalActive : MonoBehaviour
     public void ChangeGrav()
     {
         //Vector3 newPos = Vector3.Lerp(transform.position, changeSelfPos.transform.position, Time.deltaTime * lerpSpeed);
-        //transform.position = changeSelfPos.transform.position;
+        //transform.position = newPos;
+        transform.position = changeSelfPos.transform.position;
     }
 
     public void SetNormal()
     {
-        //transform.position = normalPos.transform.position;
+        transform.position = normalPos.transform.position;
     }
 
     public void Anim()

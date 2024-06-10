@@ -5,6 +5,8 @@ using UnityEngine;
 public class PauseGame : MonoBehaviour
 {
     public GameObject pauseScreen;
+    public PlayerMovement playerMove;
+    public GameObject gravScreens;
 
     void Start()
     {
@@ -27,6 +29,8 @@ public class PauseGame : MonoBehaviour
         pauseScreen.SetActive(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
+        playerMove.enabled = false;
+        gravScreens.SetActive(false);
     }
 
     public void UnPause()
@@ -34,5 +38,7 @@ public class PauseGame : MonoBehaviour
         pauseScreen.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
+        playerMove.enabled = true;
+        gravScreens.SetActive(true);
     }
 }

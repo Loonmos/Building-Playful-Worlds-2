@@ -180,13 +180,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             scroll += scrollValue;
-            starCrystal.ChangeGrav();
+            //starCrystal.ChangeGrav();
             changingGrav = true;
         }
         else if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             scroll -= scrollValue;
-            starCrystal.ChangeGrav();
+            //starCrystal.ChangeGrav();
             changingGrav = true;
         }
 
@@ -201,7 +201,8 @@ public class PlayerMovement : MonoBehaviour
             highScreen.SetActive(true);
 
             changingGrav = false;
-
+            
+            //starCrystal.SetNormal();
             //starCrystal.Anim();
         }
 
@@ -215,7 +216,8 @@ public class PlayerMovement : MonoBehaviour
             highScreen.SetActive(false);
 
             changingGrav = false;
-
+            
+            //starCrystal.SetNormal();
             //starCrystal.Anim();
         }
 
@@ -230,7 +232,8 @@ public class PlayerMovement : MonoBehaviour
             highScreen.SetActive(false);
 
             changingGrav = false;
-
+            
+            //starCrystal.SetNormal();
             //starCrystal.Anim();
         }
     }
