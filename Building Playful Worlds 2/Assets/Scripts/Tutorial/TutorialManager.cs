@@ -20,7 +20,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (gameManager.levelCompleted == true)
         {
-            state = State.End;
+            gameObject.SetActive(false);
         }
     }
 

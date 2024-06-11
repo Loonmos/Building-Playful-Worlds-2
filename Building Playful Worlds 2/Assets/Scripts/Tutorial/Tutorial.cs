@@ -7,6 +7,7 @@ using TMPro;
 public class Tutorial : MonoBehaviour
 {
     public UnityEvent ActivateScreen;
+    public GameManager gameManager;
 
     public GameObject destroyAfter;
     public GameObject tutorialScreen;
@@ -18,6 +19,11 @@ public class Tutorial : MonoBehaviour
     void Start()
     {
         tutorialVisible = false;
+
+        if (gameManager.levelCompleted == true)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     

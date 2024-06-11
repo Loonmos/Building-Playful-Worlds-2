@@ -26,7 +26,16 @@ public class LevelManager : MonoBehaviour
     
     void Update()
     {
-        
+        if (levelPuzzle == true && Input.GetKeyDown(KeyCode.P)) // complete puzzle in level
+        {
+            PuzzleCompletion.Invoke();
+        }
+
+        if (levelPuzzle == false && Input.GetKeyDown(KeyCode.P)) // complete puzzle in temple
+        {
+            TurnStarOn();
+            platformMove.canMove = true;
+        }
     }
 
     //public void OnTriggerEnter(Collider other)

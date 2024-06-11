@@ -355,6 +355,7 @@
 "Assets/Particles/Particle Ribbon by Moonflower Carnivore/Scripts/ReverseNormals.cs"
 "Assets/Particles/Particle Ribbon by Moonflower Carnivore/Scripts/rotation.cs"
 "Assets/Scripts/ChangeScenes.cs"
+"Assets/Scripts/Cheats.cs"
 "Assets/Scripts/DebugThings.cs"
 "Assets/Scripts/DontDestoyOnLoad.cs"
 "Assets/Scripts/Environment/CrystalGrabbable.cs"
