@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerCrystalAndInsert : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class PlayerCrystalAndInsert : MonoBehaviour
     public GameObject starCrystalGround;
     public GameObject barrier;
 
+    public GameObject crystalUI;
+
     
     void Start()
     {
@@ -32,6 +35,8 @@ public class PlayerCrystalAndInsert : MonoBehaviour
             starCrystalGround.SetActive(false);
             barrier.SetActive(false);
         }
+
+        crystalUI.SetActive(false);
     }
 
     
@@ -45,6 +50,7 @@ public class PlayerCrystalAndInsert : MonoBehaviour
                 {
                     crystalGrabbable.PickUpCrystal();
                     playerAudio.pickUpCrystal.Play();
+                    StartCoroutine(CrystalText());
                 }
             }
 
@@ -67,9 +73,15 @@ public class PlayerCrystalAndInsert : MonoBehaviour
 
                 starActive.TurnOn();
             }
-        }
+        }   
+    }
 
+    IEnumerator CrystalText() // show the crystal text for 2 secs
+    {
+        crystalUI.SetActive(true);
 
-            
+        yield return new WaitForSeconds(2);
+
+        crystalUI.SetActive(false);
     }
 }

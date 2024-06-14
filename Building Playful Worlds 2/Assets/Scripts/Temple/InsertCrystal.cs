@@ -13,6 +13,8 @@ public class InsertCrystal : MonoBehaviour
     public GameObject crystal;
     private bool canInsert;
 
+    public GameObject crystalUI;
+
     void Start()
     {
         gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
@@ -27,6 +29,8 @@ public class InsertCrystal : MonoBehaviour
             crystal.SetActive(false);
             canInsert = true;
         }
+
+        crystalUI.SetActive(false);
     }
 
     public void CrystalInserted()
@@ -37,6 +41,17 @@ public class InsertCrystal : MonoBehaviour
             playerInventory.RemoveCrystal();
             canInsert = false;
             Inserted.Invoke();
+            StopCoroutine(CrystalUiShow());
+            StartCoroutine(CrystalUiShow());
         }
+    }
+
+    IEnumerator CrystalUiShow()
+    {
+        crystalUI.SetActive(true);
+
+        yield return new WaitForSeconds(2);
+
+        crystalUI.SetActive(false);
     }
 }
