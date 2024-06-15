@@ -56,30 +56,15 @@ ScriptsOnlyBuild:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TerrainTools.Editor.dll:
     - UnityEditor.TerrainTools.BillowNoise
-    - UnityEditor.TerrainTools.BridgeTool
-    - UnityEditor.TerrainTools.CloneBrushTool
-    - UnityEditor.TerrainTools.ContrastTool
     - UnityEditor.TerrainTools.FbmFractalType
     - UnityEditor.TerrainTools.NoiseBlitShaderGenerator
     - UnityEditor.TerrainTools.NoiseFillShaderGenerator
-    - UnityEditor.TerrainTools.NoiseHeightTool
     - UnityEditor.TerrainTools.NoneFractalType
-    - UnityEditor.TerrainTools.PaintHeightTool
-    - UnityEditor.TerrainTools.PaintHolesTool
-    - UnityEditor.TerrainTools.PaintTextureTool
     - UnityEditor.TerrainTools.PerlinNoise
     - UnityEditor.TerrainTools.RidgeNoise
-    - UnityEditor.TerrainTools.SetHeightTool
-    - UnityEditor.TerrainTools.SharpenPeaksTool
-    - UnityEditor.TerrainTools.SlopeFlattenTool
-    - UnityEditor.TerrainTools.SmoothHeightTool
-    - UnityEditor.TerrainTools.StampTool
     - UnityEditor.TerrainTools.StrataFractalType
-    - UnityEditor.TerrainTools.TerraceErosion
-    - UnityEditor.TerrainTools.ThermalErosionTool
     - UnityEditor.TerrainTools.ValueNoise
     - UnityEditor.TerrainTools.VoronoiNoise
-    - UnityEditor.TerrainTools.WindErosionTool
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -89,10 +74,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -2366,5 +2349,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level1Puzzle.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version
-    2.4/Star Explorer.exe
+  playerPath: C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/less
+    sensitive/Star Explorer.exe

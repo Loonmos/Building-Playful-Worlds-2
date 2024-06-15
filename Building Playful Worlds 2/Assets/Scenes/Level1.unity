@@ -30746,7 +30746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCompleted: 0
   templeCompleted: 0
-  abilityGot: 1
+  abilityGot: 0
   playerPosOut: {fileID: 1147966722}
   vase1PosOut: {fileID: 282005847}
   vase2PosOut: {fileID: 1304291310}
