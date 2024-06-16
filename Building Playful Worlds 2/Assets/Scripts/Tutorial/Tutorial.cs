@@ -15,12 +15,15 @@ public class Tutorial : MonoBehaviour
 
     //public float tutorialTime = 5f;
     public bool tutorialVisible;
+    public bool inTemple;
     
     void Start()
     {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
         tutorialVisible = false;
 
-        if (gameManager.levelCompleted == true)
+        if (gameManager.levelCompleted == true && inTemple == false)
         {
             gameObject.SetActive(false);
         }

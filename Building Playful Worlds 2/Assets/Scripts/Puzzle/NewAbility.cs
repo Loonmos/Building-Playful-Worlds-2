@@ -7,6 +7,7 @@ public class NewAbility : MonoBehaviour
     private GameManager gameManager;
 
     public GameObject particles;
+    public GameObject detroyThis;
 
     private float particleTime = 3;
     private bool particlesActive;
@@ -32,7 +33,7 @@ public class NewAbility : MonoBehaviour
 
     public void DestroyObject()
     {
-        gameObject.SetActive(false);
+        detroyThis.SetActive(false);
     }
 
     public void ActivateParticles()

@@ -18,6 +18,8 @@ public class TutorialManager : MonoBehaviour
     
     void Start()
     {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
         if (gameManager.levelCompleted == true)
         {
             gameObject.SetActive(false);

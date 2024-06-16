@@ -1,68 +1,658 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1718447088694523, "dur":20278, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088714815, "dur":580, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1718447088715470, "dur":71, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1718447088715542, "dur":547, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1718447088716116, "dur":2553, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088718670, "dur":6, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088721551, "dur":353, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088721904, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088721917, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088721920, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088721932, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088721934, "dur":33, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088721967, "dur":454, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722421, "dur":30, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722452, "dur":9, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722461, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722470, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722472, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722478, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722480, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722487, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722489, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722495, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722497, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722502, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722504, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722510, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722512, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722517, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722519, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722526, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722527, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722532, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722534, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722540, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722542, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722547, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722549, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722554, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722555, "dur":30, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088722624, "dur":3001, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1718447088716638, "dur":5114, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1718447088716411, "dur":2324, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1718447088718745, "dur":1878, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1718447088716453, "dur":2300, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1718447088718759, "dur":626, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1718447088719385, "dur":2301, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1718447088716527, "dur":3291, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1718447088719821, "dur":2504, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1718447088716497, "dur":2313, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1718447088718815, "dur":635, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1718447088719451, "dur":2390, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1718447088716937, "dur":5033, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1718447088716597, "dur":3615, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1718447088720215, "dur":1621, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1718447088716578, "dur":3401, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1718447088719983, "dur":1946, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1718447088716622, "dur":4423, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1718447088716696, "dur":5198, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1718447088717104, "dur":4876, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1718447088717323, "dur":4663, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1718447088717533, "dur":4492, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1718447088717746, "dur":4288, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1718447088717950, "dur":4117, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1718447088718154, "dur":3930, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1718447088727281, "dur":470, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1718573426556919, "dur":940, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573426557866, "dur":165, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1718573426558049, "dur":25, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1718573426558074, "dur":425, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1718573426558515, "dur":489, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573426559004, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085559, "dur":203, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085763, "dur":81, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085844, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085849, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085862, "dur":36, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085898, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085903, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085905, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085911, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085912, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085917, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085918, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085922, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085923, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085926, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085927, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085931, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085932, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085936, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085937, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085940, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085941, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085944, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085946, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085949, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085950, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085954, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085955, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085958, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085959, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085963, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085965, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085968, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427085986, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427086004, "dur":2592, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1718573426558413, "dur":603, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426559019, "dur":3432, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426562580, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1718573426562582, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426562609, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1718573426562610, "dur":251, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426562863, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426564535, "dur":2900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1718573426567436, "dur":534, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer.exe" }}
+,{ "pid":12345, "tid":1, "ts":1718573426567970, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426568006, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426568012, "dur":1698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer.exe" }}
+,{ "pid":12345, "tid":1, "ts":1718573426569728, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426569749, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426569781, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426569785, "dur":1694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426571500, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426571537, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426571641, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426571660, "dur":21008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426592712, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426592752, "dur":3065, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426595826, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426595846, "dur":14791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426610660, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426610681, "dur":250, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426610933, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426610940, "dur":3663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426614621, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426614641, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426614710, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573426614713, "dur":4545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573426619274, "dur":463466, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573427082741, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573427082780, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1718573427082788, "dur":819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1718573427083625, "dur":1946, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426558516, "dur":507, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426559024, "dur":3784, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426562809, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1718573426562844, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426562865, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426565146, "dur":2363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1718573426567540, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1718573426567625, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426567669, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426568104, "dur":25502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1718573426593627, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426593648, "dur":2170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426595828, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426595846, "dur":14819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426610688, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426610710, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426610941, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426610946, "dur":3430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426614391, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426614410, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426614536, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426614543, "dur":4197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426618756, "dur":1229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.TerrainTools.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426619986, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426620130, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426620136, "dur":1941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.TerrainTools.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426622095, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426622118, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426622366, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426622375, "dur":2126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426624516, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426624535, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426624595, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426624600, "dur":2921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1718573426627538, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1718573426627561, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426627566, "dur":13747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1718573426641375, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1718573426641423, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426641441, "dur":2060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1718573426643524, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1718573426643561, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426643571, "dur":2070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1718573426645660, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1718573426645725, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1718573426645732, "dur":2127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1718573426647877, "dur":437690, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426558665, "dur":369, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426559034, "dur":3768, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426562802, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1718573426562917, "dur":13, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426562933, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426568169, "dur":17405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1718573426585610, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426585666, "dur":3259, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426588934, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426588951, "dur":19769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426608757, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426608793, "dur":713, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426609520, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426609534, "dur":3595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426613146, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426613162, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426613192, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426613197, "dur":4684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426617898, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426617915, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426618079, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426618086, "dur":3047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426621148, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426621165, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426621203, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426621209, "dur":2708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426623933, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426623958, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426623996, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426624001, "dur":3014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426627040, "dur":346340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426973382, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426973452, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1718573426973465, "dur":1466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1718573426974966, "dur":110673, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426558701, "dur":346, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426559047, "dur":3748, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426562795, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1718573426562932, "dur":13, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426562948, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426568848, "dur":16894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1718573426585765, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573426585792, "dur":3080, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426588886, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426588922, "dur":19785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573426608761, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573426608797, "dur":678, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426609513, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426609531, "dur":3213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573426612758, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573426612775, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426612799, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573426612804, "dur":4270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573426617089, "dur":440641, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573427057732, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573427057850, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1718573427057870, "dur":2609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1718573427060530, "dur":25047, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426558788, "dur":267, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426559055, "dur":3735, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426562790, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1718573426562881, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426562903, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426566837, "dur":2455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1718573426569313, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426569337, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426569380, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426569385, "dur":2159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426571580, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426571614, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426571779, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426571783, "dur":20966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426592774, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426592794, "dur":3141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426595967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426596076, "dur":15549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426611642, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426611660, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426611681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426611687, "dur":4055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426615759, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426615774, "dur":229, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426616006, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426616011, "dur":4614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426620641, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426620698, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426620733, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426620739, "dur":2504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426623258, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426623282, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426623356, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426623361, "dur":3661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1718573426627044, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":5, "ts":1718573426627079, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426627115, "dur":1067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":5, "ts":1718573426628202, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1718573426628228, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426628234, "dur":4379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1718573426632693, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1718573426632733, "dur":12, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426632784, "dur":6911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1718573426639978, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1718573426640085, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426640110, "dur":4711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1718573426644858, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1718573426644891, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426644901, "dur":1744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1718573426646668, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":5, "ts":1718573426646697, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1718573426646703, "dur":1973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":5, "ts":1718573426648713, "dur":436927, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426558887, "dur":174, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426559061, "dur":3711, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426562772, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1718573426562887, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426562907, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426566609, "dur":3339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1718573426569966, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426569986, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426570058, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426570062, "dur":1633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426571721, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426571752, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426571808, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426571827, "dur":17295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426589156, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426589198, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426589336, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426589344, "dur":20470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426609833, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426609852, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426609966, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426609972, "dur":3282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426613269, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426613286, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426613317, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573426613321, "dur":4293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573426617630, "dur":451330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573427068961, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573427069001, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1718573427069011, "dur":976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1718573427070005, "dur":15558, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426558924, "dur":144, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426559068, "dur":3697, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426562765, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1718573426562874, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426562892, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426565490, "dur":1779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1718573426567288, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1718573426567325, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426567489, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426567493, "dur":20668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1718573426588195, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426588263, "dur":764, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426589034, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426589046, "dur":19726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426608797, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426608832, "dur":655, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426609515, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426609531, "dur":3302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426612856, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426612873, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426613058, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426613073, "dur":4414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426617501, "dur":369180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426986683, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426986793, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1718573426986811, "dur":2117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1718573426988975, "dur":96600, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426558955, "dur":120, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426559075, "dur":3644, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426562719, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1718573426562753, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426562919, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426567524, "dur":2602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1718573426570143, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426570165, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426570199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426570204, "dur":1913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426572134, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426572154, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426572228, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426572233, "dur":24067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426596325, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426596350, "dur":2455, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426598816, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426598833, "dur":11937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426610785, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426610800, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426610958, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426610966, "dur":3922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426614908, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426614929, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426614968, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426614973, "dur":4671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426619664, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426619681, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426619775, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426619782, "dur":2354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426622156, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426622174, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426622247, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426622251, "dur":2351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426624622, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426624640, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426624733, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426624738, "dur":2625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":8, "ts":1718573426627384, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1718573426627409, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1718573426627415, "dur":41517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1718573426668954, "dur":416602, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426559038, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426559038, "dur":3731, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426562769, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1718573426562859, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426562899, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426565673, "dur":3516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1718573426569227, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426569263, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426569296, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426569303, "dur":1611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426570934, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426570957, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426570986, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426570991, "dur":1964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426572975, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426572998, "dur":12038, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426585049, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426585068, "dur":16505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426601599, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426601625, "dur":2189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426603819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426603826, "dur":7537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426611380, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426611396, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426611547, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426611552, "dur":3818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426615384, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426615398, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426615539, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426615543, "dur":4933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426620519, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426620547, "dur":188, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426620740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426620748, "dur":2207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426622971, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426622990, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426623126, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426623137, "dur":2398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426625553, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426625577, "dur":192, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426625783, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426625790, "dur":1940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1718573426627820, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1718573426627847, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426627852, "dur":17264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1718573426645139, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level0" }}
+,{ "pid":12345, "tid":9, "ts":1718573426645169, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426645176, "dur":1983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level0" }}
+,{ "pid":12345, "tid":9, "ts":1718573426647185, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/boot.config" }}
+,{ "pid":12345, "tid":9, "ts":1718573426647426, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426647483, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1718573426647490, "dur":1449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/boot.config" }}
+,{ "pid":12345, "tid":9, "ts":1718573426648953, "dur":436620, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426559086, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426559087, "dur":3556, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426562644, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1718573426562694, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426562889, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426565166, "dur":2618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1718573426567834, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1718573426567907, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426568045, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426568674, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1718573426570304, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1718573426570335, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426570366, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573426570371, "dur":2317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1718573426572719, "dur":472009, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":10, "ts":1718573427044730, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573427044832, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1718573427044852, "dur":1715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":10, "ts":1718573427046582, "dur":39050, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426559272, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426559273, "dur":3361, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426562634, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1718573426562687, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426562848, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426564911, "dur":2021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1718573426566951, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1718573426566970, "dur":11, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426566984, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426566989, "dur":1728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1718573426568765, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426568819, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426569006, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426569246, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426570870, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426570893, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426570921, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426570926, "dur":2080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426573047, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426573076, "dur":11974, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426585056, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426585068, "dur":19061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426604151, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426604175, "dur":1671, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426605851, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426605868, "dur":6042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426611930, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426611946, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426612135, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426612139, "dur":4647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426616803, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426616823, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426617007, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426617012, "dur":3971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426621000, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426621020, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426621054, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426621058, "dur":2715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426623790, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426623806, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426623843, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426623849, "dur":3178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1718573426627051, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":11, "ts":1718573426627089, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1718573426627097, "dur":78969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":11, "ts":1718573426706083, "dur":379513, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426559165, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426559165, "dur":3536, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426562701, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1718573426562732, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426562824, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426565248, "dur":1723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1718573426567045, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426567071, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426567095, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426567726, "dur":1644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426569395, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426569440, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426569569, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426569574, "dur":1548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426571165, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426571204, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426571274, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426571287, "dur":17707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426589037, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426589110, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426589186, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426589218, "dur":20570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426609807, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426609827, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426609962, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426609967, "dur":3858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426613840, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426613854, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426613946, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573426613951, "dur":4692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573426618662, "dur":392160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573427010823, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573427010932, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1718573427010951, "dur":2434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1718573427013443, "dur":72137, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426559361, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426559362, "dur":3267, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426562630, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1718573426562651, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426562760, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426564552, "dur":2544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1718573426567114, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426567278, "dur":470, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426567753, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426567778, "dur":32035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426599836, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426599854, "dur":807, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426600668, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426600683, "dur":10326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426611027, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426611046, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426611159, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426611166, "dur":3738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426614923, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426614942, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426614983, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426614987, "dur":5345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426620353, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426620373, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426620419, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426620423, "dur":2384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426622828, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426622847, "dur":276, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426623127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426623136, "dur":1935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426625089, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426625108, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426625143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426625148, "dur":5327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":13, "ts":1718573426630509, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1718573426630554, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426630578, "dur":4725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1718573426635357, "dur":797, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":13, "ts":1718573426636157, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426636205, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426636283, "dur":1086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":13, "ts":1718573426637392, "dur":321751, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":13, "ts":1718573426959145, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426959235, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1718573426959251, "dur":1992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":13, "ts":1718573426961301, "dur":124298, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426559387, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426559387, "dur":3171, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426562559, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1718573426562617, "dur":219, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426562839, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426564930, "dur":1879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1718573426566834, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":14, "ts":1718573426566854, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426566873, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426566878, "dur":1063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":14, "ts":1718573426568095, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426568205, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426568233, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426568658, "dur":1754, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426570431, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426570449, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426570513, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426570517, "dur":1873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426572406, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426572426, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426572548, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426572552, "dur":28354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426600925, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426600943, "dur":527, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426601501, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426601515, "dur":10213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426611745, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426611767, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426611799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426611804, "dur":4304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426616138, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426616157, "dur":192, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426616382, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426616387, "dur":4424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426620830, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426620851, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426620918, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426620923, "dur":2805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426623752, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426623780, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426623844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426623850, "dur":2356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426626224, "dur":103145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426729370, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426729429, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1718573426729448, "dur":1364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":14, "ts":1718573426730828, "dur":354798, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426559475, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426559476, "dur":3081, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426562558, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1718573426562616, "dur":215, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426562835, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426565369, "dur":1494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1718573426566881, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":15, "ts":1718573426566901, "dur":13, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426566916, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426566921, "dur":1112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":15, "ts":1718573426568061, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426568083, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426568116, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426568662, "dur":1647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426570326, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426570347, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426570378, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426570384, "dur":1794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426572217, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426572252, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426572323, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426572328, "dur":23872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426596235, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426596273, "dur":2533, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426598817, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426598833, "dur":11873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426610727, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426610746, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426610940, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426610960, "dur":4041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426615016, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426615031, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426615196, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426615200, "dur":5056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426620288, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426620313, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426620380, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426620387, "dur":3220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426623623, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426623641, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426623720, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426623725, "dur":3642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":15, "ts":1718573426627390, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":15, "ts":1718573426627440, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426627444, "dur":17523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":15, "ts":1718573426644992, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1718573426645063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1718573426645073, "dur":2564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1718573426647656, "dur":437950, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426559550, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426559550, "dur":2935, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426562501, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":16, "ts":1718573426562546, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426562657, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426564777, "dur":2337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":16, "ts":1718573426567136, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573426567155, "dur":13, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426567170, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426567173, "dur":43300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573426610493, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573426610580, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426610645, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426610651, "dur":3745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573426614416, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573426614434, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426614530, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573426614535, "dur":4111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573426618669, "dur":464965, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573427083635, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573427083660, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1718573427083666, "dur":1824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/demim/OneDrive/Bureaublad/Project Play/Builds/Star Explorer/Version 2.5 (Final)/Star Explorer_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":16, "ts":1718573427085508, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":16, "ts":1718573427085509, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1718573427089573, "dur":4282, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

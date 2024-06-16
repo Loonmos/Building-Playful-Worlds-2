@@ -16,11 +16,11 @@ public class GameManager : MonoBehaviour
     public Transform vase3PosOut;
     public Transform vase4PosOut;
 
-    private GameObject playerOut;
-    private GameObject vase1Out;
-    private GameObject vase2Out;
-    private GameObject vase3Out;
-    private GameObject vase4Out;
+    public GameObject playerOut;
+    public GameObject vase1Out;
+    public GameObject vase2Out;
+    public GameObject vase3Out;
+    public GameObject vase4Out;
 
     [Header("Temple")]
     public Transform playerPosTemple;
@@ -29,11 +29,11 @@ public class GameManager : MonoBehaviour
     public Transform vase3PosTemple;
     public Transform vase4PosTemple;
 
-    private GameObject playerTemple;
-    private GameObject vase1Temple;
-    private GameObject vase2Temple;
-    private GameObject vase3Temple;
-    private GameObject vase4Temple;
+    public GameObject playerTemple;
+    public GameObject vase1Temple;
+    public GameObject vase2Temple;
+    public GameObject vase3Temple;
+    public GameObject vase4Temple;
 
     public void SaveGameOutside()
     {
@@ -50,9 +50,6 @@ public class GameManager : MonoBehaviour
 
         vase3Out = GameObject.Find("SmallVase 1");
         vase3PosOut.position = vase3Out.transform.position;
-
-        vase4Out = GameObject.Find("SmallVase 2");
-        vase4PosOut.position = vase4Out.transform.position;
     }
 
     public void LoadGameOutside()
@@ -70,9 +67,6 @@ public class GameManager : MonoBehaviour
 
         vase3Out = GameObject.Find("SmallVase 1");
         vase3Out.transform.position = vase3PosOut.position;
-
-        vase4Out = GameObject.Find("SmallVase 2");
-        vase4Out.transform.position = vase4PosOut.position;
     }
 
     public void SaveGameTemple()

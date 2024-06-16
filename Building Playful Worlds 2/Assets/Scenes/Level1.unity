@@ -2336,7 +2336,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: dabe41a0608629c4faa37577122e5ade, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -7222,6 +7222,82 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &118349266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118349267}
+  - component: {fileID: 118349269}
+  - component: {fileID: 118349268}
+  m_Layer: 5
+  m_Name: Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &118349267
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118349266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 890439295}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &118349268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118349266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7882353, g: 0.79607844, b: 1, a: 0.11372549}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &118349269
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118349266}
+  m_CullTransparentMesh: 1
 --- !u!1 &122882912
 GameObject:
   m_ObjectHideFlags: 0
@@ -10062,6 +10138,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1001 &278273463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15959,6 +16036,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1001 &379507932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16093,7 +16171,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: dabe41a0608629c4faa37577122e5ade, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -16963,6 +17041,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!65 &443579674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22942,7 +23021,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 890439295}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23003,14 +23082,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -29396,17 +29475,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCompleted: 0
   templeCompleted: 0
-  abilityGot: 1
+  abilityGot: 0
   playerPosOut: {fileID: 1147966722}
   vase1PosOut: {fileID: 282005847}
   vase2PosOut: {fileID: 1304291310}
   vase3PosOut: {fileID: 891473829}
   vase4PosOut: {fileID: 12229040}
+  playerOut: {fileID: 0}
+  vase1Out: {fileID: 0}
+  vase2Out: {fileID: 0}
+  vase3Out: {fileID: 0}
+  vase4Out: {fileID: 0}
   playerPosTemple: {fileID: 1103020659}
   vase1PosTemple: {fileID: 1364629703}
   vase2PosTemple: {fileID: 295900025}
   vase3PosTemple: {fileID: 72912578}
   vase4PosTemple: {fileID: 1480136759}
+  playerTemple: {fileID: 0}
+  vase1Temple: {fileID: 0}
+  vase2Temple: {fileID: 0}
+  vase3Temple: {fileID: 0}
+  vase4Temple: {fileID: 0}
 --- !u!1001 &606301679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31801,6 +31890,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1 &722081654
 GameObject:
   m_ObjectHideFlags: 0
@@ -31811,7 +31901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 722081655}
   - component: {fileID: 722081657}
-  - component: {fileID: 722081656}
+  - component: {fileID: 722081658}
   m_Layer: 0
   m_Name: SaveGame
   m_TagString: Untagged
@@ -31834,33 +31924,6 @@ Transform:
   m_Father: {fileID: 1452967762}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &722081656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722081654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8df1a9f7f2b2b9a4a8c7965089de5742, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Collided:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 596023691}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SaveGameOutside
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &722081657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31874,6 +31937,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.534088, y: 8.664368, z: 1}
   m_Center: {x: 1.6520844, y: 2.9584045, z: 0}
+--- !u!114 &722081658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722081654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9afd1fe6789c84fa433c7178e5f637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outside: 1
+  temple: 0
 --- !u!1 &723944231
 GameObject:
   m_ObjectHideFlags: 0
@@ -38594,6 +38671,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1 &854013100
 GameObject:
   m_ObjectHideFlags: 0
@@ -44979,7 +45057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &890439295
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44992,14 +45070,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 118349267}
   - {fileID: 494392013}
   m_Father: {fileID: 1462673171}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -282, y: 123.849976}
-  m_SizeDelta: {x: 533.2533, y: 247.7}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -210, y: -104}
+  m_SizeDelta: {x: 382.9651, y: 159.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &890732970
 GameObject:
@@ -47159,6 +47238,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1 &1010353066
 GameObject:
   m_ObjectHideFlags: 0
@@ -48418,6 +48498,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1 &1106781470
 GameObject:
   m_ObjectHideFlags: 0
@@ -55278,6 +55359,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1001 &1206690632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56964,6 +57046,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!65 &1296724827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57170,18 +57253,6 @@ PrefabInstance:
       propertyPath: tpTransform
       value: 
       objectReference: {fileID: 1262163234}
-    - target: {fileID: 3374399390714834104, guid: 44f78ee45274f184896455457818b4bf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3374399390714834104, guid: 44f78ee45274f184896455457818b4bf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3374399390714834104, guid: 44f78ee45274f184896455457818b4bf, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 3801338794269415921, guid: 44f78ee45274f184896455457818b4bf, type: 3}
       propertyPath: gravText
       value: 
@@ -66736,6 +66807,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!65 &1575790772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72769,7 +72841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1633963633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73366,6 +73438,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1001 &1661094914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79209,6 +79282,7 @@ MonoBehaviour:
   tutorialScreen: {fileID: 1337028979}
   text: {fileID: 615665929}
   tutorialVisible: 0
+  inTemple: 0
 --- !u!1 &2068946216
 GameObject:
   m_ObjectHideFlags: 0

@@ -383,6 +383,7 @@
 "Assets/Scripts/Puzzle/PlatformMovement.cs"
 "Assets/Scripts/Puzzle/StatueSlam.cs"
 "Assets/Scripts/Puzzle/StatueStates.cs"
+"Assets/Scripts/SaveGame.cs"
 "Assets/Scripts/Temple/ActivateAbility.cs"
 "Assets/Scripts/Temple/ColliderEvent.cs"
 "Assets/Scripts/Temple/InsertCrystal.cs"

@@ -1839,6 +1839,7 @@ MonoBehaviour:
   starCrystalPlayer: {fileID: 3374399390715064472}
   starCrystalGround: {fileID: 0}
   barrier: {fileID: 0}
+  crystalUI: {fileID: 0}
 --- !u!114 &2807641273158534554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2445,15 +2446,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1188583675506750123, guid: 54c369a3b7f2a8c499f0a6bab4584031, type: 3}
       propertyPath: m_LocalPosition.x
